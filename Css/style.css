@@ -187,25 +187,25 @@ nav ul li a:hover{
 
   /* <!-- // ********* CLOSE CAR ANIMATION ********* // --> */
 
-.header-title{
-	
-	
+.welcome-text{
+	margin: 5vw 2.5vw !important;
+	line-height: 1;
 }
 
 .welcome-to{
 	font-size: 5vw;
 	font-family: 'Oleo Script', cursive;
-	animation: to 5s linear 1;
+	animation: welcomeTo 4s linear 1;
 }
-@keyframes to {
+@keyframes welcomeTo {
 	0% {
 	  opacity: 0;
-	  transform: translateY(0%);
+	  transform: translateY(-10%);
 	}
 	
 	100% {
 	  opacity: 1;
-	  transform: translateY(10%);
+	  transform: translateY(0%);
 	}
   }
   
@@ -214,8 +214,21 @@ nav ul li a:hover{
 	font-family: 'Oleo Script', cursive;
 	color: #1b1b1b;
 	display: inline;
-	
+	animation: bakul 5s linear 1 ;
 }
+
+@keyframes bakul {
+	0% {
+	  opacity: 0;
+	  transform: translateY(0%);
+	}
+	
+	100% {
+	  opacity: 1;
+	  transform: translateY(-20%);
+	}
+  }
+  
 .buy{
 	font-size: 1vw;
 	font-weight: bold;
@@ -233,7 +246,7 @@ nav ul li a:hover{
 	padding: 1vw 3vw;
 	border: none;
 	border-radius: 50px;
-	margin-top: 10px;
+	margin-top: 2vw;
 	background-color: transparent;
 	font-family: 'Oleo Script', cursive;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -259,16 +272,13 @@ nav ul li a:hover{
 /* <!-- // ********* CLOSE SHOP NOW BUTTON ********* // --> */
 
 /* <!-- // ********* START SLIDE ********* // --> */
-	.wholslider{
-		height: 20vw;
-		width: 90%;
-		margin:auto;
+	.sliders{
+		
+		height:400px;
+		width: 100%;
 		border-radius: 50px;
-		position: relative;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		margin-top: 4vw !important;
 		animation: runningslider 2.5s linear 1 ;	
 	}
 
@@ -283,8 +293,8 @@ nav ul li a:hover{
 	}
 }
 	.slider-image{
-		height: 18vw;
-		width: 50%;
+		height: 380px;
+		width: 100%;
 		border-radius: 50px;
 	}
 
