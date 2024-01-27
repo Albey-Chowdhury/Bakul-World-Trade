@@ -10,10 +10,17 @@
     span{
         width: fit-content;
     }
+   
 }
 
 @media(max-width:400px){
     .sidebar{
         width: 100%;
+    }
+     .wholslider{
+        border-radius: 0px;
+    }
+    .slider-image{
+        border-radius: 0px;
     }
 }
