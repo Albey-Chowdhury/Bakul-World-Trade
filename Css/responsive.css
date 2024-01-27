@@ -6,11 +6,8 @@
     .menu-button{
         display: block;
     }
+  
     
-    span{
-        width: fit-content;
-    }
-   
 }
 
 @media(max-width:400px){
