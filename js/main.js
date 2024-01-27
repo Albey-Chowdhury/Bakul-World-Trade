@@ -1,7 +1,24 @@
 $(document).ready(function(){
-    $(".loader").fadeOut(6000);
+    $(".loader").fadeOut(5000);
 });
- // Get references to the car image and color buttons
+
+//side bar 
+
+function showsidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function closesidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+
+
+
+
+
+
+// Get references to the car image and color buttons
     const carImage = document.getElementById('car-image');
     const redButton = document.getElementById('red');
     const blueButton = document.getElementById('blue');

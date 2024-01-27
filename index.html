@@ -7,36 +7,97 @@
 	<link rel="shortcut icon" type="x-icon" href="image/tap logo.png" >
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<body class="index">
+<body style="overflow: hidden;">
+
+	<!-- // ********* START LODER ********* // -->
+
 	<div class="loader">
 		<div class="load-text">
 		  <div class="loaded-text">B</div>
 		  <div class="loading-text">akul World Trad</div>
 		</div>
 	  </div>  
-	<div class="car-container">
-	<img href="index.html" src="image/c.png"class="car" alt="Blue Car" id="car-image">
-    </div>
-    <div class="color-buttons">
-        <button id="red">Red</button>
-        <button id="blue">Blue</button>
-        <button id="green">Green</button>
-    </div>
+
+	<!-- // ********* CLOSE LODER ********* // -->
+	
+	<!-- // ********* START NAVBAR ********* // -->
+	
 	<nav>
-         <ul>
-         	<li><a id="active" href="index.html">HOME</a></li>
-         	<li><a href="shop.html">Shop</a></li>
-        	<li><a href="about.html">ABOUT</a></li>
-         	<li><a href="CONTACT US.html">CONTACT US</a></li>
-        </ul>
-		<div class="bwt_logo"><img src="image/Bwt logo.png" class="logo" ></div>
-    </nav>
-   <div class="header-title"><i class="welcome-to">Welcome to</i>
-		<br><i class="bakul">Bakul world trade</i><br>
-		<p class="choose">choose your favorite or dream car
-	 	At your home </p>
+		<ul>
+			 <li class="hideOnModile"><a id="active" href="index.html">HOME</a></li>
+			 <li class="hideOnModile"><a href="shop.html">Shop</a></li>
+			 <li class="hideOnModile"><a href="about.html">ABOUT</a></li>
+			 <li class="hideOnModile"><a href="CONTACT US.html">CONTACT US</a></li>
+			 <li id="navShow"class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+		<div class="bwt_logo"><a href="index.html"><img src="image/Bwt logo.png" class="logo" ></a></div>
+		
+		<ul class="sidebar">
+			<li class="close" onclick="closesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			 <li><a id="active" href="index.html">HOME</a></li>
+			 <li><a href="shop.html">Shop</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			 <li><a href="CONTACT US.html">CONTACT US</a></li>
+		</ul>
+	</nav>
+
+	<!-- // ********* CLOSE NAVBAR ********* // -->
+
+	<!-- // ********* START CAR ANIMATION ********* // -->
+
+	<div class="car-container">
+	<img href="index.html" src="image/c.png"class="car" alt="Blue Car" id="car-image">				
+    </div>
+	<div class="color-buttons">
+        <button id="blue" class="color-button" style="background-color:#ff7860ba;"></button>
+        <button id="red" class="color-button" style="background-color:#6adeacc5;"></button>
+        <button id="green" class="color-button" style="background-color: #a9adffa2;"></button>
+    </div>
+	
+	<!-- // ********* CLOSE CAR ANIMATION ********* // -->
+	
+	<!-- // ********* START WELCOME SECTION ********* // -->
+
+   <div class="header-title">
+	<span class="welcome-to">Welcome to</span><br>
+	<span class="bakul">Bakul world trade</span><br>
+	<span class="buy">Buy your favorite or dream carAt your home </span>
 	</div>
+
+	<!-- // ********* CLOSE WELCOME SECTION ********* // -->
+	
+	<!-- // ********* START SLIDE ********* // -->
+	
+	<div class="into-slide">
+		<div id="carouselExampleAutoplaying" class="carousel slide mask-slide" data-bs-ride="carousel">
+			<div class="carousel-inner all-slider-image">
+				<div class="carousel-item active">
+					<img src="Image/slider1.jpg" class="d-block w-100 slide-image" alt="...">
+				</div>
+					<div class="carousel-item">
+						<img src="Image/slider2.jpg" class="d-block w-100 slide-image" alt="...">
+					</div>
+					<div class="carousel-item">
+					<img src="Image/slider3.jpg" class="d-block w-100 slide-image" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				<!-- <img src="Image/mask.jpg" class="mask"> -->
+				<div class="mask"></div>
+			</div>
+	</div>
+		
+	<a href="shop.html"><button class="shop_now">SHOP NOW</button>
+
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/all.min.js"></script>

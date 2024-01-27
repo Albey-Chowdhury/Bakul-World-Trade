@@ -19,12 +19,20 @@ body{
 	 min-height: 100%;
 	 overflow-x: hidden;
 }
-.index{
-	overflow: hidden;
-}
+
 html{
 	height: 100%;
 }
+
+a{
+	cursor: pointer;
+}
+
+/* **************** START HOME  *************** 
+***************---------------------*********** */
+
+/* <!-- // ********* START LODER ********* // --> */
+
 .loader {
 	position: fixed;
 	left: 0;
@@ -32,13 +40,17 @@ html{
 	background: white;
 	width: 100%;
 	height: 100vh;
-	/*font-family: 'Pacifico', cursive;*/
 	font-family: 'Oleo Script', cursive;
 	animation: backgroundChange 2s linear 10s forwards;
 	color: #45cdfd;
-	z-index:1;
+	z-index:3;
   }
   
+  @keyframes backgroundChange {
+	from {background-color: white}
+	to {background-color:transparent}
+  }
+
   .load-text {
 	left: 52%;
 	top: 50%;
@@ -49,121 +61,51 @@ html{
 	display: flex;
 	animation: colorChange .3s linear 3s forwards;
   }
+
+   @keyframes colorChange {
+	from {color: #45cdfd}
+	to {color:transparent}
+  }
+
    .loaded-text {
 	transform: scale(1.5);
 	animation: scaleText .15s linear .5s forwards;
   }
+
+  @keyframes scaleText {
+	from {transform: scale(1.5)}
+	to {transform: scale(1)}
+  }
+
   .loading-text {
 	width: 0;
 	overflow: hidden;
 	animation: expand 1.5s linear 1.5s forwards;
 	white-space: nowrap;
   }
-  
-  main {
-	padding: 1em;
-	box-sizing: border-box;
-	color: white;
-	min-height: 100vh;
-  }
-  
-  @keyframes scaleText {
-	from {transform: scale(1.5)}
-	to {transform: scale(1)}
-  }
-  
+ 
   @keyframes expand {
 	from {width: 0;}
 	to {width: 50vmax;}
   }
   
-  @keyframes backgroundChange {
-	from {background-color: white}
-	to {background-color:transparent}
-  }
-  
-  @keyframes colorChange {
-	from {color: #45cdfd}
-	to {color:transparent}
-  }
-.car{
-	width: 40%;
-	left: 5%;
-	position: absolute;
-	animation: run 4s linear 1;
-	margin-top: 80px;
-	z-index:1 ;
-}
-@keyframes run{
-	0%{
-		transform: translate(100%,0%);
-	}
-}
-.header-title{
-	margin-top: 10%;
-	margin-left: 65%;
-	position: relative;
-	z-index: -2;
 
-}
-.welcome-to{
-	font-family: 'Oleo Script', cursive;
-    position: absolute;
-    top: -50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-size: 9rem;
-    color: #3f3f3f;
-    opacity: 0;
-    animation: fade-in 10s ease-in-out forwards;
-}
-@keyframes fade-in {
-	0% {
-	  opacity: 0;
-	  transform: translate(-50%, -70%);
-	}
-	50% {
-	  opacity: 1;
-	  transform: translate(-50%, -50%);
-	}
-	100% {
-	  opacity: 1;
-	  transform: translate(-50%, -50%);
-	}
-  }
+  /* <!-- // ********* CLOSE LODER ********* // --> */
+
+  /* <!-- // ********* START NAVBAR ********* // --> */
   
-.bakul{
-	font-size: 40px;
-	font-family: 'Oleo Script', cursive;
-	color: #1b1b1b;
-	opacity: 0;
-    animation: fade-in 15s ease-in-out forwards;
-	margin-left: -12px;
-	margin-top: 60px;
-}
-.choose{
-	font-size: 20px;
-	font-weight: bold;
-	color: #1b1b1b;
-	opacity: 0;
-    animation: fade-in 15s ease-in-out forwards;
-	margin-left: 212px;
-	font-style: italic;
-}
-.button-box{
-	width: 220px;
-	margin: 35px auto;
-	position: relative;
-	border-radius: 30px;
-}
 nav{
 	background-color:#8fe0fe;
 	height: 50px;
-	width: 100%;
+	width: 70%;
+	margin: auto;
+	margin-top: 2rem;
+	text-align: center;
+	border-radius: 50px;
 	box-shadow: 0 0 40px 8px #4d4d4d63;
-	border-radius: 20px;
-	margin-top: 18px;
-
+	position: sticky;
+	top: 0;
+	z-index: 999;
 }
 
 nav ul{
@@ -175,6 +117,8 @@ nav ul li {
     line-height: 40px;
     margin: 0 5px;
     padding: 5px;
+	cursor: pointer;
+	
 }
 nav ul li a{
 	color:#000;
@@ -197,6 +141,240 @@ nav ul li a:hover{
 #active:hover{
 	color: #8fe0fe;
 }
+
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	backdrop-filter: blur(5px);
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	width: 250px;
+	background-color: #8fe0fe5d;
+
+}
+
+.sidebar li,a {
+	width: 100%;
+}
+
+.menu-button{
+	display: none;
+}
+
+  /* <!-- // ********* START NAVBAR ********* // --> */
+
+  /* <!-- // ********* START CAR ANIMATION ********* // --> */
+
+.car{
+	width: 75rem;
+	left: 12rem;
+	position: absolute;
+	animation: run 4s linear 1;
+	margin-top: 80px;
+	z-index:1 ;
+}
+
+@keyframes run{
+	0%{
+		transform: translate(0%,0%);
+	}
+	100%{
+		transform: translate(100%,0%);
+	}
+}
+
+.color-buttons{
+	height: 100px;
+	width: 300px;
+	margin: 550px 300px ;
+	position: absolute;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border: 2px solid #fff;
+	display: inline-flex;
+	justify-content:space-evenly;
+	align-items: center;
+	border-radius: 50px;
+	animation: color-buttons 5s linear 1;
+}
+
+@keyframes color-buttons{
+	0%{
+		transform: translateY(0%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(10%);
+		opacity: 1;
+	}
+}
+
+.color-button{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-color:transparent;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.click{
+	position: absolute;
+	font-size: 3rem;
+	color:#fff;
+	font-family: 'Oleo Script', cursive;
+	z-index: -1;
+}
+  /* <!-- // ********* CLOSE CAR ANIMATION ********* // --> */
+
+.header-title{
+	margin-top: 20rem;
+	margin-left: 110rem;
+	position: relative;
+	z-index: -2;
+
+}
+.welcome-to{
+	font-family: 'Oleo Script', cursive;
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    font-size: 9rem;
+    color: #3f3f3f;
+    opacity: 0;
+    animation: fade-in 10s ease-in-out forwards;
+}
+@keyframes fade-in {
+	0% {
+	  opacity: 0;
+	  transform: translate(-50%, -70%);
+	}
+	50% {
+	  opacity: 1;
+	  transform: translate(-50%, -50%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translate(-50%, -50%);
+	}
+  }
+  
+  .bakul{
+	font-size: 40px;
+	font-family: 'Oleo Script', cursive;
+	color: #1b1b1b;
+	opacity: 0;
+    animation: fade-in 15s ease-in-out forwards;
+	
+}
+.buy{
+	font-size: 20px;
+	font-weight: bold;
+	color: #1b1b1b;
+	opacity: 0;
+    animation: fade-in 15s ease-in-out forwards;
+	font-style: italic;
+}
+
+/* <!-- // ********* COLSE CAR ANIMATION ********* // --> */
+
+/* <!-- // ********* START SLIDE ********* // --> */
+
+.into-slide{
+	position: relative;
+	margin: 5rem 100rem;
+	animation: into 5s ease-in-out forwards;
+}
+
+  @keyframes into {
+	0% {
+		opacity: 0;
+	  	transform: translateY(0);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(-5%);
+	}
+	
+  }
+
+.all-slider-image{
+	position: absolute;
+	top: 10px;
+}
+
+.mask-slide{
+
+	width: 850px;
+	height: 300px;
+	border-radius: 50px;
+	position: absolute;
+	top: 0;
+	
+}
+
+.mask{
+
+	width: 850px;
+	height: 350px;
+	border-radius: 50px;
+	border: 2px solid #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	position: absolute;
+	top: 0;
+	
+}
+
+.slide-image{
+	height: 300px;
+	max-width:750px;
+	margin: 15px 50px;
+	border-radius: 50px;
+}
+
+/* <!-- // ********* START SHOP NOW BUTTON ********* // --> */
+
+.shop_now{
+	color: #fff;
+	font-size: 2.5rem;
+	margin-top: 6rem;
+	margin-left: 45%;	
+	padding: 1.5rem 5rem;
+	border-radius: 50px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	font-family: 'Oleo Script', cursive;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	animation: shop-now 4s linear infinite ;
+}
+
+  @keyframes shop-now {
+	0% {
+	  	transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-15%);
+	}
+	100% {
+	  
+	  animation: reverse;
+	}
+  }
+
+/* <!-- // ********* CLOSE SHOP NOW BUTTON ********* // --> */
+
+/* **************** CLOSE HOME  *************** 
+***************---------------------*********** */
+
 .card-group{
 	margin-top: 35%;
     margin-left: 245px;
@@ -273,92 +451,15 @@ nav ul li a:hover{
 	background: rgb(39, 39, 39);
 	transition: 1s;
 }
-footer{
-	width: 100%;
-	height: 140px;
-	background: #000;
 
-}
-.footir_text{
-	color: #3d3d3d;
-    font-size: 24px;
-    font-family: 'Oleo Script', cursive;
-    text-align: center;
-	position:block;
-}
-.footer-front{
-	margin-left: 45%;
-	padding: 20px;
-}
-.f-icon{
-	font-size: 30px;
-	margin: 10px;
-	color:#fff;
-	transition: .5s;
-	cursor: pointer;
-}
-.f-icon:hover{
-	transform: translate(0,-5px);
-	background-color: #3b5999;
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	padding: 5px;
-}
-.coming-twitter:hover{
-	background-color: #55acee;
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	padding: 5px;
-}
-.coming-instagram:hover{
-	background-color: #E4405f;
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	padding: 5px;
-}
-.footer-nav{
-	width: 30%;
-	position: absolute;
-	background-color:#000;
-	box-shadow: none;
-	margin-left: 40px;
-    margin-top: 40px;
-
-	
-}
-.footer-ul{
-	margin-left: 65px;
-	
-}
-.footer-ul li a {
-	color: #fff;
-
-}
-.footer-ul li a:hover{
-	color: #8fe0fe;
-}
-.tofggle-btn{
-	padding: 10px 30px;
-	border-radius: 30px;
-	cursor: pointer;
-	margin-left: 5px;
-	background: transparent;
-	outline:none; 
-	border: 0;
-	background-color: #fff;
-	box-shadow: 0 0 40px 8px #5a9cab8f;
-	
-}
 #login{
 	position: relative;
 	right: 50px;
 }
+
 .tofggle-btn:hover{
 	box-shadow: 0 0 40px 8px #06e3ff;
-	}
+}
 
 .form-main{ 
 	margin-top: 5%;
@@ -443,6 +544,7 @@ footer{
 	background: #eaeaea;
 	margin-left: 60px;
 	margin-top: -75px;
+	cursor: pointer;
 }
 label.logo{
 	
@@ -454,29 +556,14 @@ label.logo{
 
 }
 .logo {
-	height: 75px;
-	margin: 6px;
+	height: 60px;
+	margin: 10px;
 	padding: 5px;
 	text-transform: uppercase;
 	font-weight: bold;
 	white-space: nowrap;
-	animation: slide-left 4s linear infinite ;
 	z-index: -3;
   }
-  
-  @keyframes slide-left {
-	0% {
-	  transform: translateX(0);
-	}
-	50%{
-		transform: translateX(-10%);
-	}
-	100% {
-	  
-	  animation: reverse;
-	}
-  }
-  
   
 .checkbtn{
 	font-size: 30px;
@@ -632,25 +719,21 @@ section{
 }
 .contact{
   outline:none;
-  color: #89eaef;
+  color: #000000;
   border: 1px solid #3498db;
   background: #b1bdc1;
   padding: 10px 20px;
-  font-size: 20px;
-  font-family: "montserrat";
+  font-size: 1.8rem;
   cursor: pointer;
   margin: 10px;
   transition: 0.8s;
   position: relative;
   overflow: hidden;
-  border-radius: 30%;
+  border-radius: 20px;
   top :40px;
   box-shadow: 0px 0px 10px #06e3ff;
- 
-
 }
 .contact:hover{
-	box-shadow: 0px 0px 10px #000;
 	transition: top .2s;
 	}
 .contact1{
@@ -676,4 +759,5 @@ section{
 .contact1:hover::before{
   height: 180%;
 }
+
 
