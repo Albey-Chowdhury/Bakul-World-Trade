@@ -581,36 +581,6 @@ section{
 	color: #fff;
 
 }
-.container{
-	position: absolute;
-	text-align: center;
-	perspective-origin: center;
-	left: 6%;
-	animation: run 5s linear 1;
-	
-}
-.container1{
-	position: absolute;
-	text-align: center;
-	perspective-origin: center;
-	left: 210%;
-	animation: run 5s linear 1;
-}
-
-.container2{
-	position: absolute;
-	text-align: center;
-	perspective-origin: center;
-	left: 210%;
-	animation: run 5s linear 1;
-}
-@keyframes run{
-	0%{
-		transform: translate(-200%,0%);
-	}
-	
-}
-
 
 .name{
 	text-align: center;
