@@ -718,4 +718,92 @@ section{
   height: 180%;
 }
 
+/* footer part start */
+
+.mainBg{
+	background-color: #324A5E;
+	color: white;
+}
+h1.Footer_head {
+    margin-top: 20px;
+    margin-bottom: 20px;
+	text-align: center;
+}
+.footer_first p{
+	font-size: 16px;
+	line-height: 1.9;
+    word-spacing: 4px;
+}
+.footer_first p a{
+	text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.footer_first p a:hover{
+	color: #0400ff;
+}
+.footerFaq li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	margin-left: 8px;
+	font-weight: bold;
+	line-height: 2.5;
+	
+}
+.footerFaq li a:hover{
+	color: #06e3ff;
+}
+
+.FooterInformation p{
+	font-size: 15px;
+}
+
+.FooterInformation p a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+.footer_icon{
+	fill: #ffffff ;
+	margin-left: 5px;
+}
+img.payment_pic {
+    width: 200px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.copyrightPart{
+	text-align: center;
+	margin-top: 10px;
+	color: #ffffff;
+}
+
+.copyright_bg{
+	background-color: #34536D;
+}
+.copyrightIcon{
+	fill: #ffffff;
+}
+
+.copyrightIcon:hover{
+	fill: #06e3ff;
+}
+.footerIconList{
+	justify-content: space-around;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+/* footer part end */
+
 
