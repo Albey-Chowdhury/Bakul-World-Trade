@@ -43,7 +43,7 @@ a{
 	font-family: 'Oleo Script', cursive;
 	animation: backgroundChange 2s linear 10s forwards;
 	color: #45cdfd;
-	z-index:3;
+	z-index:999;
   }
   
   @keyframes backgroundChange {
@@ -105,7 +105,7 @@ nav{
 	box-shadow: 0 0 40px 8px #4d4d4d63;
 	position: sticky;
 	top: 0;
-	z-index: 999;
+	z-index: 998;
 }
 
 nav ul{
@@ -170,7 +170,7 @@ nav ul li a:hover{
   /* <!-- // ********* START CAR ANIMATION ********* // --> */
 
 .car{
-	width: 75rem;
+	width: 40%;
 	left: 12rem;
 	position: absolute;
 	animation: run 4s linear 1;
@@ -250,9 +250,9 @@ nav ul li a:hover{
     font-size: 9rem;
     color: #3f3f3f;
     opacity: 0;
-    animation: fade-in 10s ease-in-out forwards;
+    animation: Welcome 10s ease-in-out forwards;
 }
-@keyframes fade-in {
+@keyframes Welcome {
 	0% {
 	  opacity: 0;
 	  transform: translate(-50%, -70%);
@@ -272,7 +272,7 @@ nav ul li a:hover{
 	font-family: 'Oleo Script', cursive;
 	color: #1b1b1b;
 	opacity: 0;
-    animation: fade-in 15s ease-in-out forwards;
+    animation: Welcome 10s ease-in-out forwards;
 	
 }
 .buy{
@@ -280,7 +280,7 @@ nav ul li a:hover{
 	font-weight: bold;
 	color: #1b1b1b;
 	opacity: 0;
-    animation: fade-in 15s ease-in-out forwards;
+    animation: Welcome 15s ease-in-out forwards;
 	font-style: italic;
 }
 
@@ -307,39 +307,27 @@ nav ul li a:hover{
 	
   }
 
+.boder-slide{
+
+	width: 850px;
+	height: 350px;
+	border: 3px solid #fff;
+	border-radius: 50px;
+	margin-top: auto;
+}
+
 .all-slider-image{
 	position: absolute;
 	top: 10px;
 }
-
-.mask-slide{
-
-	width: 850px;
-	height: 300px;
-	border-radius: 50px;
-	position: absolute;
-	top: 0;
-	
-}
-
-.mask{
-
-	width: 850px;
-	height: 350px;
-	border-radius: 50px;
-	border: 2px solid #fff;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	position: absolute;
-	top: 0;
-	
-}
-
 .slide-image{
 	height: 300px;
-	max-width:750px;
+	max-width:89%;
 	margin: 15px 50px;
 	border-radius: 50px;
 }
+
+
 
 /* <!-- // ********* START SHOP NOW BUTTON ********* // --> */
 
