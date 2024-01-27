@@ -122,7 +122,7 @@ nav ul li {
 }
 nav ul li a{
 	color:#000;
-	font-size: 15px;
+	font-size: .8vw;
 	padding: 10px 15px;
 	border-radius: 20px;
 	text-transform: uppercase;
@@ -173,84 +173,39 @@ nav ul li a:hover{
 	width: 40%;
 	left: 12rem;
 	position: absolute;
-	animation: run 4s linear 1;
+	animation: run 3s linear 1;
 	margin-top: 80px;
 	z-index:1 ;
 }
 
 @keyframes run{
 	0%{
+		transform: translate(-50%,0%);
+	}
+	100%{
 		transform: translate(0%,0%);
 	}
-	100%{
-		transform: translate(100%,0%);
-	}
 }
 
-.color-buttons{
-	height: 100px;
-	width: 300px;
-	margin: 550px 300px ;
-	position: absolute;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	border: 2px solid #fff;
-	display: inline-flex;
-	justify-content:space-evenly;
-	align-items: center;
-	border-radius: 50px;
-	animation: color-buttons 5s linear 1;
-}
-
-@keyframes color-buttons{
-	0%{
-		transform: translateY(0%);
-		opacity: 0;
-	}
-	100%{
-		transform: translateY(10%);
-		opacity: 1;
-	}
-}
-
-.color-button{
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	border: 2px solid #fff;
-	background-color:transparent;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.click{
-	position: absolute;
-	font-size: 3rem;
-	color:#fff;
-	font-family: 'Oleo Script', cursive;
-	z-index: -1;
-}
   /* <!-- // ********* CLOSE CAR ANIMATION ********* // --> */
 
 .header-title{
-	margin-top: 20rem;
-	margin-left: 110rem;
+	margin: 10% 60%;
 	position: relative;
-	z-index: -2;
-
+	width:max-content;
 }
 .welcome-to{
 	font-family: 'Oleo Script', cursive;
     position: absolute;
-    bottom: 10px;
-    left: 180px;
+    bottom: 2%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 9rem;
+    font-size: 5vw;
     color: #3f3f3f;
     opacity: 0;
     animation: Welcome 10s ease-in-out forwards;
+	width:max-content;
+	
 }
 @keyframes Welcome {
 	0% {
@@ -268,20 +223,21 @@ nav ul li a:hover{
   }
   
   .bakul{
-	font-size: 40px;
+	font-size: 2vw;
 	font-family: 'Oleo Script', cursive;
 	color: #1b1b1b;
 	opacity: 0;
     animation: Welcome 10s ease-in-out forwards;
-	
+
 }
 .buy{
-	font-size: 20px;
+	font-size: 1vw;
 	font-weight: bold;
 	color: #1b1b1b;
 	opacity: 0;
     animation: Welcome 15s ease-in-out forwards;
 	font-style: italic;
+
 }
 
 /* <!-- // ********* COLSE CAR ANIMATION ********* // --> */
