@@ -1,4 +1,7 @@
 @media (max-width:800px) {
+    li{
+        font-size: 1.5em;
+    }
     .hideOnModile{
         display: none;
     }
@@ -6,11 +9,23 @@
     .menu-button{
         display: block;
     }
-  
     
+    .carandtext{
+        position: relative;
+    }
+    .welcome-text{
+        text-align:left ;
+    }
+    .wholcar{
+        text-align: right;
+        position: absolute;
+    }
 }
 
 @media(max-width:400px){
+    a{
+        font-size: 1rem !important;
+    }
     .sidebar{
         width: 100%;
     }
@@ -19,5 +34,21 @@
     }
     .slider-image{
         border-radius: 0px;
+    }
+  
+    .carandtext{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+
+    }
+    .welcome-text{
+       margin: 0;
+    }
+    .wholcar{
+        text-align: right;
+        position: absolute;
+        top: 20px;
     }
 }
