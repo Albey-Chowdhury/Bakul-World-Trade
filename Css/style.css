@@ -145,6 +145,17 @@ nav ul li a:hover{
 #active:hover{
 	color: #8fe0fe;
 }
+.nav-list-logo-inner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.nav-logo-image{
+	height:	80px;
+	width: 80px;
+	border-radius: 50%;
+}
 
 .sidebar{
 	position: fixed;
