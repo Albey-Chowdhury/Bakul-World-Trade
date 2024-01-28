@@ -285,12 +285,6 @@ nav ul li a:hover{
 
 /* <!-- // ********* START SLIDE ********* // --> */
 	.sliders{
-		
-		height:400px;
-		width: 100%;
-		border-radius: 50px;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
-		margin-top: 4vw !important;
 		animation: runningslider 2.5s linear 1 ;	
 	}
 
@@ -304,12 +298,7 @@ nav ul li a:hover{
 		transform: translateY(0%);
 	}
 }
-	.slider-image{
-		height: 380px;
-		width: 100%;
-		border-radius: 50px;
-		margin-top: 12px;
-	}
+
 
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */

@@ -20,6 +20,10 @@
         text-align: right;
         position: absolute;
     }
+    .sliders{
+        margin-top: 50px !important;
+    }
+
 }
 
 @media(max-width:400px){
@@ -32,10 +36,6 @@
      .wholslider{
         border-radius: 0px;
     }
-    .slider-image{
-        border-radius: 0px;
-    }
-  
     .carandtext{
         display: flex;
         justify-content: space-between;
