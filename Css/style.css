@@ -159,6 +159,15 @@ nav ul li a:hover{
 	border-radius: 50%;
 }
 
+.nav_icon {
+    fill: #000000;
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+}
+
 .sidebar{
 	position: fixed;
 	top: 0;
@@ -181,6 +190,7 @@ nav ul li a:hover{
 
 .menu-button{
 	display: none;
+	float: inline-end;
 	
 }
 
@@ -716,8 +726,6 @@ img.payment_pic {
 
 /* footer part end */
 
-<<<<<<< HEAD
-=======
 /* shop page category part start */
 
 .CategoryName{
@@ -787,14 +795,6 @@ img.payment_pic {
 
 
 }
-.nav_icon {
-    fill: #000000;
-    margin-bottom: 5px;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-}
 
 /* shop page category part end */
->>>>>>> 13911991b70d1ca9ca6134688697b45a3563a8a7
 
