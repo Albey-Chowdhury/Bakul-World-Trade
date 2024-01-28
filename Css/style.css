@@ -364,13 +364,6 @@ nav ul li a:hover{
     overflow-x: auto;
 	
 }
-
-.category_link_image {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-}
 .category_image{
     height: 80px;
     width: 80px;
@@ -515,7 +508,7 @@ img.payment_pic {
 	margin-top: 5px;
 }
 
-/* **************** CLOSE FOOTER  *************** 
+/* ****************  FOOTER  *************** 
 ***************---------------------*********** */
 
 
