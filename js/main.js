@@ -1,6 +1,6 @@
-// $(document).ready(function(){
-//     $(".loader").fadeOut(5000);
-// });
+$(document).ready(function(){
+    $(".loader").fadeOut(4000);
+});
 
 //side bar 
 
