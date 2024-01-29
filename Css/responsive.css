@@ -23,6 +23,9 @@
     .sliders{
         margin-top: 50px !important;
     }
+    .top-heading{
+        font-size: 30px;
+    }
 
 }
 
@@ -51,4 +54,8 @@
         position: absolute;
         top: 20px;
     }
+    .top-heading{
+        font-size: 20px;
+    }
+
 }
