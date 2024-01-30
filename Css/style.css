@@ -360,6 +360,7 @@ nav ul li a:hover{
 ***************---------------------*********** */
 
 
+
 .whol-category{
 	display: flex;
     overflow-x: auto;;
@@ -380,11 +381,6 @@ nav ul li a:hover{
 	justify-content: center;
 }
 
-.traindHead h1{
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 15px;
-}
 
 .traindin-card{
 	background: none !important;
@@ -401,27 +397,26 @@ nav ul li a:hover{
 	font-weight:bold ;
 	text-shadow: #45cdfd 1px 0 5px;
 }
+/* shop and product part start */
 
-
- .whole_cart{
-	margin-top: 20px;
+.shoping_card_bg{
+	background-color: #51747c78;
+	margin-top: 5rem;
+}
+ .shop_cart{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 	
 }
-.trainding_cars{
-	display: flex;
-	justify-content: center;
-}
-.trainding_cars img{
-	height: 15rem;
-}
-.trainding_card_body h5{
+
+.shop_card_body h5{
 
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.trainding_card_body p{
+.shop_card_body p{
 	font-size: 15px;
     text-align: center;
 }
@@ -433,6 +428,8 @@ button.btn.card_body_btn{
 	font-weight: bold;
 	margin-left: 6rem;
 } 
+
+/* shop and product part end */
 
 
 
@@ -447,6 +444,7 @@ button.btn.card_body_btn{
 .mainBg{
 	background-color: #324A5E;
 	color: white;
+	margin-top: 7rem;
 }
 h1.Footer_head {
     margin-top: 20px;
