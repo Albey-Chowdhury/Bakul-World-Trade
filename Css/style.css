@@ -422,10 +422,19 @@ button.btn.card_body_btn{
 ***************---------------------*********** */
 
 
+/* about part start */
+.about_header{
+	font-size: 45px;
+	margin-top: 3rem;
+}
+/* about part end */
+
 /* start contact part  */
 
 .contact_header{
 	margin-top: 6rem;
+	font-size: 40px;
+	font-weight: bold;
 }
 .whol-contact-from{
     height: auto;
@@ -437,10 +446,6 @@ button.btn.card_body_btn{
     margin-top: 10rem;
 }
 
-.contact-from h1{
-    font-weight: bold;
-    color: var(--white-color);
-}
 input.contact_input {
 	font-size: 20px;
 }
