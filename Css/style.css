@@ -422,6 +422,99 @@ button.btn.card_body_btn{
 ***************---------------------*********** */
 
 
+/* start contact part  */
+
+.contact_header{
+	margin-top: 6rem;
+}
+.whol-contact-from{
+    height: auto;
+    min-height: 80vh;
+	background-color: #8db4b7;
+}
+
+.contact-from{
+    margin-top: 10rem;
+}
+
+.contact-from h1{
+    font-weight: bold;
+    color: var(--white-color);
+}
+input.contact_input {
+	font-size: 20px;
+}
+textarea.contact_input {
+	font-size: 20px;
+}
+.contact-from input:focus,
+.contact-from textarea:focus{
+    color: #ffffff;
+    border: 0;
+    border-bottom: 2px solid #065951;
+    box-shadow: none;
+}
+.contact-from::placeholder {
+    color: red;
+  }
+
+.contact-from ::placeholder{
+   color: var(--white-color) !important;
+}
+
+.contact-from span {
+    color: #ff904b;
+    font-size: 20px;
+    width: 100%;
+}
+.contact-from textarea{
+    background: transparent;
+    border: 1px solid #0089ff;
+}
+
+.contact-icon-box{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0089ff;
+}
+
+.contact-icon{
+    color:#0089ff;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.contact-icon-box span {
+    color: #0089ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-icon-box p {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+}
+.contact-dots{
+    top: 20%;
+}
+.contact_button{
+    float: left;
+}
+.contact_button button{
+ height: 50px;
+ width: 100px;
+ background-color: #0089ff;
+ border-radius: 10%;
+ border: none;
+ color: white;
+ font-size: 15px;
+ font-weight: bold;
+}
+/* close contact part */
+
 /* **************** START FOOTER  *************** 
 ***************---------------------*********** */
 
