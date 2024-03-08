@@ -27,14 +27,8 @@ a{
 	cursor: pointer;
 }
 
-/* **************** START GLOBAL CSS  *************** 
-***************---------------------*********** */
-.header_section_content{
-	margin-top: 10rem !important;
-}
-.wholcar{
-	margin-top: 10rem !important;
-}
+/* **************  START GLOBAL CSS  ***************** 
+   **************----------------------*************** */
 .top-heading{
 	top:40px;
 	text-transform: uppercase;
@@ -45,8 +39,6 @@ a{
 	color: #333;
 	position: relative;
 }
-
-
 
 .top-heading::after {
     content: "";
@@ -365,22 +357,6 @@ nav ul li a:hover{
 	justify-content: center;
 }
 
-
-.traindin-card{
-	background: none !important;
-	border: none !important;
-}
-
-.traindin-card img{
-	height: 100% ;
-	width: 100% ;
-}
-.traindin-card h1{
-	color: #fff !important;
-	font-size: 2vw;
-	font-weight:bold ;
-	text-shadow: #45cdfd 1px 0 5px;
-}
 /* shop and product part start */
 
 .shoping_card_bg{
@@ -414,9 +390,6 @@ button.btn.card_body_btn{
 } 
 
 /* shop and product part end */
-
-
-
 
 /* **************** CLOSE SHOP  *************** 
 ***************---------------------*********** */
