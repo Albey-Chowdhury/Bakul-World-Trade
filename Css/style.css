@@ -30,6 +30,8 @@ a{
 :root{
 	--Primary-color:#29BEF5;
 	--Secondary-color:#45e19f;
+	--white-color:#fff;
+	--black-color:#000;
 	--nav-color:linear-gradient(176deg, rgba(0,215,250,1) 0%, rgba(95,156,236,1) 97%);
 }
 /* **************  START GLOBAL CSS  ***************** 
@@ -187,7 +189,7 @@ nav ul li {
 	
 }
 nav ul li a{
-	color:#000;
+	color:var(--white-color);
 	font-size: 1.5rem;
 	padding: 8px 15px;
 	border-radius: 20px;
@@ -197,14 +199,15 @@ nav ul li a{
 
 }
 nav ul li a:hover{
-	color: #fff;
+	color: var(--black-color);
 	transform: .5s;
 }
 #active{
-	background:#fff;
+	background:var(--black-color);
 }
+
 #active:hover{
-	color: #8fe0fe;
+	color: var(--white-color) !important;
 }
 .nav-list-logo-inner{
 	position: absolute;
