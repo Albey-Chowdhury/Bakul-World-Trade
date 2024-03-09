@@ -83,13 +83,13 @@ a{
     background:var(--nav-color);
     border-radius: 50px;
     transform-origin: left;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     transform: scale(1);
     z-index:-1 ;
 }
 .global-btn:hover::before {
     transform-origin: right;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     transform: scale(0);
 }
 .global-btn:hover {
