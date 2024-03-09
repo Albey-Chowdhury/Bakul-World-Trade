@@ -509,6 +509,10 @@ button.btn.card_body_btn{
 
 
 /* about part start */
+
+.rel{
+	margin-top: 50px;
+}
 .about_header{
 	font-size: 45px;
 	margin-top: 3rem;
@@ -524,13 +528,12 @@ button.btn.card_body_btn{
 }
 .whol-contact-from{
     height: auto;
-    min-height: 80vh;
-	background-color: #8db4b7;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(186,252,243,1) 23%, rgba(0,255,222,0.7959558823529411) 96%);
+	
 }
 
-.contact-from{
-    margin-top: 10rem;
-}
+
 
 input.contact_input {
 	font-size: 20px;
