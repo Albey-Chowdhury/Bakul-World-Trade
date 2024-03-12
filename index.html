@@ -19,19 +19,18 @@
 		  <div class="loaded-text">B</div>
 		  <div class="loading-text">akul World Trad</div>
 		</div>
-	  </div>  
+	</div>  
 
 	<!-- // ********* CLOSE LODER ********* // -->
 	
 	<!-- // ********* START NAVBAR ********* // -->
-	<div>
 	<nav class="container">
 		<a class="nav-list-logo-inner" href="index.html"><img src="Image/navlogo.jpg" class="nav-logo-image"></a>
 		<ul>
 			 <li class="hideOnModile"><a id="active" href="#index">HOME</a></li>
 			 <li class="hideOnModile"> <a href="#about">ABOUT</a></li>
 			 <li class="hideOnModile"><a href="#shop">Shop</a></li>
-			 <li class="hideOnModile"><a href="#CONTACT">CONTACT US</a></li>			
+			 <li class="hideOnModile"><a href="#contact">CONTACT US</a></li>			
 			<li id="navShow" class="menu-button" onclick="showsidebar()"><a href="#"><svg class="ee" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 		</ul>
 		
@@ -46,9 +45,10 @@
 </div>
 
 	<!-- // ********* CLOSE NAVBAR ********* // -->
-
+	
+	<!-- // ********* Start Index ********* // -->
+	<section id="index">
 	<!-- // ********* START CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
-   <section id="index">
    <div class="col-md-12 mt-5 ">
 		<div class="container">
 			<div class="row">
@@ -64,9 +64,7 @@
 			</div>
 		</div>
 	</div>	
-</section>		
 	<!-- // ********* CLOSE CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
-
 	<!-- // ********* trainding part start ********* // -->
 	 	<div class="col-md-12 home-categories">
          	<div class="container">
@@ -85,23 +83,20 @@
 			</div>
 		</div>
 	<!-- // ********* trainding part close ********* // -->
-
-	      <!-- content part start -->
-      <section id="about">
-         <div class="col-md-12">
-         <div class="container">
-            <div class="col-md-12">
-               <h1 class="text-center about_header">
-                  About Us
-               </h1>
-            </div>
-         </div>
-      </div>
-   </section>
-
-     
-       <!-- About page start -->
-       <section class="py-3 py-md-5 py-xl-8 aboutUsSection">
+	</section>		
+	<!-- // ********* Close Index ********* // -->
+	
+	<!-- // ********* Start About ********* // -->
+       <section class="py-3 py-md-5 py-xl-8 aboutUsSection" id="about">
+		
+		<!-- about part start -->
+		<div class="col-md-12">
+         	<div class="container">
+            	<div class="col-md-12">
+               		<h1 class="text-center about_header">About Us</h1>
+            	</div>
+         	</div>
+       </div>
          <div class="container">
            <div class="row align-items-center">
              <div class="col-12 col-lg-6 col-xl-5 fadeInLeft delay-0-2s animated">
@@ -148,7 +143,6 @@
            </div>
          </div>
        </section>
-     
        <section class="ww-do-two-area py-3 rel z-1 pt-5 aboutUsSection">
          <div class="container">
              <div class="row justify-content-between align-items-center">
@@ -199,29 +193,8 @@
          </div>
        </section>
      
-       <section class="aboutUsSection">
-         <div class="col-lg-9 mx-auto py-4">
-           <div class="text-center">
-             <div class="about-bottom-heading">
-             <h3>{{ config('app.name') }}</h3>
-             <h6 class="mt-2">
-               {{ request()->language === 'en' ? $aboutus->agency_tagline : $aboutus->agency_tagline_da }}
-             </h6>
-           </div>
-             <p class="mt-4 agencySlogan">
-               {{ request()->language === 'en' ? $aboutus->agency_slogan : $aboutus->agency_slogan_da }}
-             </p>
-           </div>
-         </div>
-         <blockquote class="agencySays">
-           {{ request()->language === 'en' ? $aboutus->agency_says : $aboutus->agency_says_da }}
-         </blockquote>
-       </section>
-      <!-- content part end -->
-      <!-- ********* START TRAINDING CARS ************** -->
-      
-      <!-- ********* CLOSE TRAINDING CARS ************** -->
 
+   
       <!-- ********* START Product ************** -->
 
             <section id="shop">
@@ -283,50 +256,50 @@
       <!-- ********* START Product ************** -->
 
       <!-- ********* START Contact ************** -->
-	       <div>
-         <div class="rel">
-            <div id="CONTACT" class="col-md-12 whol-contact-from rel">
-               <div class="container">
-                  <div class="row main_contact_form">
-                     <div class="col-md-8">
-                        <h1 class="contact_header"><i class="fa-solid fa-car-rear fa-fade"></i> We Are Here !</h1>
-                        <div class="col-md-9 mb-4 mt-5">
-                           <input type="text" class="form-control contact_input" placeholder="Username" />
-                        </div>
-                        <div class="col-md-9 mb-4">
-                           <input type="email" name="email" class="form-control contact_input" placeholder="Enter Your Email"/>
-                        </div>
-                        <div class="col-md-9">
-                           <textarea name="massage" class="form-control contact_input" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
-                        </div>
-                        <div>
-                           <a href="#">
-                              <button class="global-btn mt-5 mb-5">Submit</button>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-md-4 m-auto">
-                        <div class="contact-icon-box">
-                           <i class="fa-solid fa-location-dot contact-icon z-1 mt-5"></i>
-                           <span class="z-1">LOCATION</span>
-                           <p class="z-1">Uttara Dhaka - 1230</p>
-                        </div>
-                        <div class="contact-icon-box">
-                           <i class="fa-solid fa-envelope contact-icon z-1"></i>
-                           <span class="z-1">EMAIL ADDRESS</span>
-                           <p class="z-1 text-center">info@gmail.com<br>ajaira@gmail.com</p>
-                        </div>
-                        <div class="contact-icon-box rmb-65">
-                           <i class="fa-solid fa-phone contact-icon z-1"></i>
-                           <span class="z-1">PHONE NUMBER</span>
-                           <p class="z-1">0165465112 <br>0156498525</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+         <section id="contact">
+			<div class="rel">
+			   <div id="CONTACT" class="col-md-12 whol-contact-from rel">
+				  <div class="container">
+					 <div class="row main_contact_form">
+						<div class="col-md-8">
+						   <h1 class="contact_header"><i class="fa-solid fa-car-rear fa-fade"></i> We Are Here !</h1>
+						   <div class="col-md-9 mb-4 mt-5">
+							  <input type="text" class="form-control contact_input" placeholder="Username" />
+						   </div>
+						   <div class="col-md-9 mb-4">
+							  <input type="email" name="email" class="form-control contact_input" placeholder="Enter Your Email"/>
+						   </div>
+						   <div class="col-md-9">
+							  <textarea name="massage" class="form-control contact_input" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
+						   </div>
+						   <div>
+							  <a href="#">
+								 <button class="global-btn mt-5 mb-5">Submit</button>
+							  </a>
+						   </div>
+						</div>
+						<div class="col-md-4 m-auto">
+						   <div class="contact-icon-box">
+							  <i class="fa-solid fa-location-dot contact-icon z-1 mt-5"></i>
+							  <span class="z-1">LOCATION</span>
+							  <p class="z-1">Uttara Dhaka - 1230</p>
+						   </div>
+						   <div class="contact-icon-box">
+							  <i class="fa-solid fa-envelope contact-icon z-1"></i>
+							  <span class="z-1">EMAIL ADDRESS</span>
+							  <p class="z-1 text-center">info@gmail.com<br>ajaira@gmail.com</p>
+						   </div>
+						   <div class="contact-icon-box rmb-65">
+							  <i class="fa-solid fa-phone contact-icon z-1"></i>
+							  <span class="z-1">PHONE NUMBER</span>
+							  <p class="z-1">0165465112 <br>0156498525</p>
+						   </div>
+						</div>
+					 </div>
+				  </div>
+			   </div>
+			</div>
+		 </section>
       <!-- ********* Close Contact ************** -->
 
 	      <!-- // ********* START FOOTER PART ********* // -->

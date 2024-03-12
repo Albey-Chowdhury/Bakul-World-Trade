@@ -171,15 +171,13 @@ nav{
 	background: var(--nav-color);
 	height: 50px;
 	width: 70%;
-	margin-top: 1vw;
+	margin-top: 3vh;
 	border-radius: 50px;
 	box-shadow: 0 0 40px 8px #4d4d4d63;
 	position: sticky;
-	top: 0;
-	z-index: 998;
-	position: relative;
+	top:0;
+	z-index: 999;
 }
-
 nav ul{
 	text-align: right;
 }
