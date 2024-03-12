@@ -510,14 +510,201 @@ button.btn.card_body_btn{
 
 /* about part start */
 
-.rel{
+/* .rel{
 	margin-top: 50px;
-}
+} */
 .about_header{
 	font-size: 45px;
 	margin-top: 3rem;
 }
 /* about part end */
+
+/* about page start */
+.aboutUsSection:nth-child(even) {
+    background: #000000;
+}
+.aboutUsSection:nth-child(odd) {
+    background: skyblue;
+}
+.aboutUsSection h2,h3{
+    color: var(--primary-color) !important;
+}
+.card-title {
+    color: var(--white-color) !important;
+}
+.about-svg-icon{
+    color: var(--primary-color);
+}
+.ww-do-btns {
+    margin-top: 1rem;
+}
+.ww-do-btns a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+.feature-item-two {
+    padding: 1.6rem 1rem;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 991px) {
+    .home-service-main {
+        display: flex;
+        justify-content: center;
+    }
+    .sub-title{
+        margin-top: 3rem;
+    }
+  .page-banner-area{
+    height: auto;
+  }
+  .what-we-offer{
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+    .feature-item-two {
+        margin-top: 0;
+    }
+}
+.feature-item-two.color-three {
+    background: #fef9ed;
+}
+.feature-item-two .icon {
+    color: #fff;
+    margin-bottom: 25px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+.feature-item-two.color-two {
+    background: #effafe;
+}
+.feature-item-two.color-two .icon {
+    background: #01c9f5;
+}
+.year-of-experience {
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--primary-color);
+    -webkit-transform: translate(-20%, -20%);
+    -ms-transform: translate(-20%, -20%);
+    transform: translate(-20%, -20%);
+}
+.ww-do-two-images .image-one {
+    margin-top: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .ww-do-two-images .image-one {
+        margin-top: 0;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ww-do-two-images .image-two {
+        float: right;
+        margin-top: 30px;
+        margin-right: 30px;
+        width: calc(40% - 18px);
+    }
+}
+
+.ww-do-two-images .image-three {
+    margin: 40px -55px 50px 0;
+    max-width: calc(100% + 55px);
+}
+@media only screen and (max-width: 575px) {
+    .ww-do-two-images .image-three {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: calc(60% - 18px);
+    }
+}
+@media only screen and (max-width: 575px) {
+    .year-of-experience {
+        -webkit-transform: translate(0, -40%);
+        -ms-transform: translate(0, -40%);
+        transform: translate(0, -40%);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .year-of-experience {
+        width: 165px;
+        height: 165px;
+        font-size: 16px;
+        -webkit-transform: translate(0, -30%);
+        -ms-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+    }
+}
+.year-of-experience .number {
+    color: #fff;
+    display: block;
+    line-height: 1;
+    font-size: 65px;
+    margin-bottom: 15px;
+    font-family: "Merriweather", serif;
+}
+@media only screen and (max-width: 375px) {
+    .year-of-experience .number {
+        font-size: 45px;
+    }
+}
+.about-bottom-heading h6{
+    color: var(--white-color);
+}
+.agencySlogan{
+    color: var(--footer-li-color);
+}
+.agencySays {
+    font-size: 1.4em;
+    max-width: 1070px;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-inline: auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-top: 8px solid var(--primary-color);
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.agencySays::before {
+    content: "\201C";
+    color: var(--secondary-color);
+    font-size: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: -0.8rem;
+}
+
+.agencySays::after {
+    content: "\201D";
+    color: var(--secondary-color);
+    font-size: 4rem;
+    position: absolute;
+    right: 1rem;
+    bottom: -2.6rem;
+}
+/* about page end */
 
 /* start contact part  */
 
