@@ -28,10 +28,10 @@
 	<nav class="container">
 		<a class="nav-list-logo-inner" href="index.html"><img src="Image/navlogo.jpg" class="nav-logo-image"></a>
 		<ul>
-			 <li class="hideOnModile"><a id="active" href="index.html">HOME</a></li>
-			 <li class="hideOnModile"><a href="about.html">ABOUT</a></li>
-			 <li class="hideOnModile"><a href="shop.html">Shop</a></li>
-			 <li class="hideOnModile"><a href="CONTACT US.html">CONTACT US</a></li>			
+			 <li class="hideOnModile"><a id="active" href="#index">HOME</a></li>
+			 <li class="hideOnModile"> <a href="#about">ABOUT</a></li>
+			 <li class="hideOnModile"><a href="#shop">Shop</a></li>
+			 <li class="hideOnModile"><a href="#CONTACT">CONTACT US</a></li>			
 			<li id="navShow" class="menu-button" onclick="showsidebar()"><a href="#"><svg class="ee" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 		</ul>
 		
@@ -48,7 +48,7 @@
 	<!-- // ********* CLOSE NAVBAR ********* // -->
 
 	<!-- // ********* START CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
-
+   <section id="index">
    <div class="col-md-12 mt-5 ">
 		<div class="container">
 			<div class="row">
@@ -63,7 +63,8 @@
 				</div>
 			</div>
 		</div>
-	</div>			
+	</div>	
+</section>		
 	<!-- // ********* CLOSE CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
 
 	<!-- // ********* trainding part start ********* // -->
@@ -86,7 +87,8 @@
 	<!-- // ********* trainding part close ********* // -->
 
 	      <!-- content part start -->
-      <div class="col-md-12">
+      <section id="about">
+         <div class="col-md-12">
          <div class="container">
             <div class="col-md-12">
                <h1 class="text-center about_header">
@@ -95,6 +97,7 @@
             </div>
          </div>
       </div>
+   </section>
 
      
        <!-- About page start -->
@@ -215,44 +218,13 @@
          </blockquote>
        </section>
       <!-- content part end -->
-<!-- // ********* START CATEGORY ********* // -->
-      <div class="col-md-12">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4"></div>
-               <div class="col-md-4">
-                  <h1 class="top-heading mb-5">
-                     Categories
-                  </h1>
-                  <div class="col-md-4"></div>
-                  </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-md-12">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-2"></div>
-               <div class="whol-category mt-5 col-md-8">
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-                  <li class="col-md-2"><a class="category_link_image" href="#"><img class="category_image" src="Image/navlogo.jpg" alt=""></a></li>
-               </div>
-               <div class="col-md-2"></div>
-            </div>
-         </div>
-      </div>
-      <!-- // ********* CLOSE CATEGORY ********* // -->
       <!-- ********* START TRAINDING CARS ************** -->
       
       <!-- ********* CLOSE TRAINDING CARS ************** -->
 
       <!-- ********* START Product ************** -->
 
-   
+            <section id="shop">
             <div class="shoping_card_bg col-md-12">
                <div class="container">
                   <div class="text-center top-heading">
@@ -306,13 +278,14 @@
                   </div>
                </div>
             </div>
+         </section>
    
       <!-- ********* START Product ************** -->
 
       <!-- ********* START Contact ************** -->
 	       <div>
          <div class="rel">
-            <div class="col-md-12 whol-contact-from rel">
+            <div id="CONTACT" class="col-md-12 whol-contact-from rel">
                <div class="container">
                   <div class="row main_contact_form">
                      <div class="col-md-8">
