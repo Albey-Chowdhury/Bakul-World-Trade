@@ -612,6 +612,7 @@ h1.Footer_head {
     margin-top: 20px;
     margin-bottom: 20px;
 	text-align: center;
+	font-size: 32px;
 }
 .footer_first p{
 	font-size: 16px;
@@ -655,7 +656,7 @@ h1.Footer_head {
 	margin-left: 5px;
 }
 img.payment_pic {
-    width: 200px;
+    width: 115px;
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
@@ -664,6 +665,10 @@ img.payment_pic {
 	text-align: center;
 	margin-top: 10px;
 	color: #ffffff;
+}
+.copyrightPart h3{
+	font-size: 18px;
+	margin-top: 21px;
 }
 
 .copyright_bg{
