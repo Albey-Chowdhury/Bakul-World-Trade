@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" type="x-icon" href="image/tap logo.png" >
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/responsive.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
 </head>
@@ -29,8 +30,7 @@
 		<ul>
 			 <li class="hideOnModile"><a id="active" href="#index">HOME</a></li>
 			 <li class="hideOnModile"> <a href="#about">ABOUT</a></li>
-			 <li class="hideOnModile"> <a href="#feature">Featured</a></li>
-			 <li class="hideOnModile"> <a href="#Service">Service</a></li>
+			 <li class="hideOnModile"> <a href="#cars">Shop</a></li>
 			 <li class="hideOnModile"><a href="#contact">CONTACT US</a></li>			
 			<li id="navShow" class="menu-button" onclick="showsidebar()"><a href="#"><svg class="ee" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 		</ul>
@@ -67,7 +67,7 @@
 	</div>	
 	<!-- // ********* CLOSE CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
 	<!-- // ********* trainding part start ********* // -->
-	 	<!-- <div class="col-md-12 home-categories">
+	 	<div class="col-md-12 home-categories">
          	<div class="container">
             	<div class="row">		
 						<h1 class="top-heading mb-5">Trainding</h1>
@@ -82,7 +82,7 @@
 				<div class="my-card"><img src="Image/supercar1.jpg"></div>
 				<div class="my-card"><img src="Image/car-image-1.jpg"></div>
 			</div>
-		</div> -->
+		</div>
 	<!-- // ********* trainding part close ********* // -->
 	</section>		
 	<!-- // ********* Close Index ********* // -->
@@ -90,21 +90,51 @@
    <!-- About part start -->
    <section id="about">
       <div class="container">
-         <div class="text-center mt-5 about_header">
-            <h1>About US</h1>
+         <div class="text-center service_header mt-5 mb-5">
+            <h1>About Us</h1>
          </div>
       </div>
-   </section>
+
+      <div class="col-md-12 mt-5">
+         <div class="row">
+            <div class="col-md-6">
+               <img class="service_image" src="Image/service_head.png" alt="">
+            </div>
+            <div class="col-md-6">
+               <div class="service_sub_head mt-5 text-center">
+                  <h2>WHY YOU SHOULD CHOOSE US?</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid suscipit sit deserunt provident cumque quam explicabo labore sint placeat illo.</p>
+               </div>
+               <div class="service_icon d-flex mt-5">
+                  <div class="col-md-6">
+                     <div class="service_icon_one">
+                        <i class="fa-solid fa-toolbox"></i>
+                     </div>
+                     <h4>GREAT SERVICE</h4>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum hic aliquam numquam fugit sunt.
+                  </div>
+                  <div class="col-md-6">
+                     <div class="service_icon_two">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                     </div>
+                     <h4>24/7 SUPPORT</h4>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum hic aliquam numquam fugit sunt.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
    <!-- About part end -->
 
 
 
 
        <!-- featured part start -->
-       <section id="feature">
+       <section id="cars">
          <div class="container">
             <div class="mt-5 mb-5 feature_header">
-               <h1>Featured Car</h1>
+               <h1>Shop</h1>
             </div>
          </div>
 
@@ -207,34 +237,10 @@
        </section>
        <!-- featured part end -->
 
-
-       <!-- start service part start -->
-       <section id="Service">
-         <div class="container">
-            <div class="text-center service_header">
-               <h1>Our Services</h1>
-            </div>
-         </div>
-
-         <div class="col-md-12 mt-5">
-            <div class="row">
-               <div class="col-md-6">
-                  <img class="service_image" src="Image/service_head.png" alt="">
-               </div>
-               <div class="col-md-6">
-                  <div class="service_sub_head">
-                     <h2>WHY YOU SHOULD CHOOSE US?</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-       </section>
-       <!-- start service part end -->
-
       <!-- ********* START Contact ************** -->
          <section id="contact">
 			<div class="rel">
-			   <div id="CONTACT" class="col-md-12 whol-contact-from rel">
+			   <div class="col-md-12 whol-contact-from rel mt-5">
 				  <div class="container">
 					 <div class="row main_contact_form">
 						<div class="col-md-8">
@@ -399,6 +405,7 @@
       </footer>
       <!-- // ********* CLOSE FOOTER PART ********* // -->
 	<script src="js/main.js"></script>
+	<script src="js/all.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

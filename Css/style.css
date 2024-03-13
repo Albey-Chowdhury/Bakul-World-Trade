@@ -192,7 +192,7 @@ nav ul li {
 }
 nav ul li a{
 	color:var(--white-color);
-	font-size: 1.5rem;
+	font-size: 1rem;
 	padding: 8px 15px;
 	border-radius: 20px;
 	text-transform: uppercase;
@@ -488,6 +488,28 @@ nav ul li a:hover{
 .service_image{
 	height: 100%;
 	width: 600px;
+}
+.service_sub_head{
+	margin-right: 5px;
+}
+.service_sub_head h2{
+	color: #454545;
+	font-weight: bold;
+}
+.service_sub_head p{
+	font-size: 18px;
+	margin-top: 15px;
+}
+.service_icon{
+	margin-left: 3rem;
+}
+.service_icon_one{
+	font-size: 5rem;
+	color: #0089ff;
+}
+.service_icon_two{
+	font-size: 5rem;
+	color: #0089ff;
 }
 /* service part end */
 
