@@ -201,16 +201,10 @@ nav ul li a{
 
 }
 nav ul li a:hover{
-	color: var(--black-color);
+	background: var(--black-color);
 	transform: .5s;
 }
-#active{
-	background:var(--black-color);
-}
 
-#active:hover{
-	color: var(--white-color) !important;
-}
 .nav-list-logo-inner{
 	position: absolute;
 	top: 50%;
@@ -250,7 +244,13 @@ nav ul li a:hover{
 	background-color: #8fe0fe5d;
 	
 }
-
+.sidebar li a {
+	color: var(--black-color);
+}
+.sidebar li a:hover{
+	background: var(--nav-color);
+	color: var(--white-color);
+}
 .sidebar >li,a {
 	width: 100%;
 }
@@ -372,7 +372,7 @@ nav ul li a:hover{
 
 /* <!-- // ********* Start Tending car ********* // --> */
 .home-categories{
-	margin-top: -100px;
+	margin-top: -140px;
 	margin-bottom: 50px;
 	animation: bakul 5s linear 1 ;
 }
@@ -417,6 +417,21 @@ nav ul li a:hover{
     transform: scale(1);
 	transition: 3s;
 }
+.my-card:hover ~ .my-card3 {
+    transform: scale(1);
+	transition: 3s;
+}
+
+@media only screen and (max-width:600px){
+	.my-card{
+		margin-bottom: 5px;
+	}
+	.my-card2{
+		transform: scale(1);
+	}
+	
+}
+
 
 
 
