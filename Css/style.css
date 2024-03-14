@@ -44,6 +44,7 @@ a{
     line-height: 1;
     font-size: 50px;
     font-weight: 700;
+	margin-bottom: 60px;
     color: transparent;
 	text-align: center;
 	text-transform: uppercase;
@@ -58,7 +59,7 @@ a{
     border: 2px solid var(--Secondary-color);
     position: absolute;
 	display: block;
-    top: 100%;
+    top: 130%;
 	left: 50%;
 	transform: translate(-50%,-50%);
     border-radius: 2rem;
@@ -374,7 +375,7 @@ nav ul li a:hover{
 /* <!-- CLOSE BUTTON --> */
 
 /* <!-- Start Tending car --> */
-.home-categories{
+.home-trainding{
 	margin-top: -100px;
 	margin-bottom: 50px;
 	animation: bakul 5s linear 1 ;
