@@ -32,6 +32,7 @@ a{
 :root{
 	--Primary-color:#29BEF5;
 	--Secondary-color:#45e19f;
+	--tertiary-color:#1D3D63;
 	--white-color:#fff;
 	--black-color:#000;
 	--nav-color:linear-gradient(176deg, rgba(0,215,250,1) 0%, rgba(95,156,236,1) 97%);
@@ -71,7 +72,7 @@ a{
     font-size: 1.2rem;
     font-weight: bold;
 	padding: .8vw 3vw;
-    background-color: #065654;
+    background-color: var(--Secondary-color);
     border-radius: 50px;
     position: relative;
     transition: 1s;
@@ -98,9 +99,7 @@ a{
     transition: transform 1s ease;
     transform: scale(0);
 }
-.global-btn:hover {
-	background:#000;
-}
+
 /* **************** START GLOBAL CSS  *************** 
 ***************---------------------*********** */
 
@@ -454,41 +453,41 @@ nav ul li a:hover{
 
  /* end about css */
 
-/* start featured css */
-.main_card{
-	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
+/* **************** START SHOP  *************** 
+***************---------------------*********** */
+
 .main_card:hover{
 	transform: scale(1.1);
 	transition: 1.8s;
 }
-
-.card_content{
+.whole-card{
 	background: #203c52;
 }
 
-.feature_title{
-    color: #ffffff;
-}
 .title_price {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.shop_paragraph{
-	color: #ffffff;
+.card-model{
+	color:var(--Primary-color);
 }
-.price_count{
-	color: rgb(0 137 255);
+.price_count,.whole-card hr{
+	color: var(--Secondary-color);
+}
+.shop-type-category{
+    color: gray;
 }
 .shop_content{
-	color: #ffffff;
+	color: #e4e4e4;
 }
 .shop_btn {
     height: 3rem;
-    width: 219px ;
-    display: flex;
-    align-items: center;
+    width: 235px ;
+	font-size: 16px ;
+	display: flex;
+	align-items: center;
+    text-align: center;
 }
 
 
