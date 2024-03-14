@@ -26,6 +26,7 @@ section{
 
 a{
 	cursor: pointer;
+	text-decoration: none;
 }
 
 :root{
@@ -450,32 +451,30 @@ nav ul li a:hover{
  /* end about css */
 
 /* start featured css */
-.feature_header h1{
-    color: #454545;
-    text-align: center;
-    font-size: 35px;
+.card_content{
+	background: #203c52;
 }
+
 .feature_title{
-    color: #454545;
+    color: #ffffff;
 }
 .title_price {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.shop_paragraph{
+	color: #ffffff;
+}
 .price_count{
-	color: #0089ff;
+	color: rgb(0 137 255);
+}
+.shop_content{
+	color: #ffffff;
 }
 
-.featured_btn{
-    margin-left: 18px;
-}
 
-@media only screen and (max-width: 767px) {
-	.whole_cards{
-	  margin-left: 7rem;
-	}
-  }
+
 /* end featured css */
 
 /* service part start */
