@@ -26,6 +26,27 @@
     .top-heading{
         font-size: 30px;
     }
+    .welcome-to{
+        font-size: 10vw;
+    }
+    .bakul{
+        font-size: 5vw;
+    }
+    .buy{
+        font-size: 2vw;
+    }
+    .runigCar{
+        transform: scaleX(-1) !important;
+    	animation: runningCar 3s linear 1 ;     
+    }
+    @keyframes runningCar{
+	0%{
+		transform: translateY(50%,20%);
+	}
+	100%{
+		transform: translate(0%,0%);
+	}
+}
 
 }
 

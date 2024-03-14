@@ -164,9 +164,9 @@ a{
   }
   
 
-  /* <!-- // ********* CLOSE LODER ********* // --> */
+  /* <!--  CLOSE LODER  --> */
 
-  /* <!-- // ********* START NAVBAR ********* // --> */
+  /* <!--  START NAVBAR  --> */
   
 nav{
 	background: var(--nav-color);
@@ -261,12 +261,13 @@ nav ul li a:hover{
 	
 }
 
-  /* <!-- // ********* START NAVBAR ********* // --> */
+/* <!-- CLOSE NAVBAR  --> */
 
-  /* <!-- // ********* START CAR ANIMATION ********* // --> */
+/* <!-- // START HOME  // --> */
+/* <!-- START RUNIG CAR PART  --> */
 
 .runigCar{
-	width: 40vw;
+	width: 100%;
 	animation: runningCar 3s linear 1 ;
 	z-index:1 ;
 }
@@ -280,7 +281,9 @@ nav ul li a:hover{
 	}
 }
 
-  /* <!-- // ********* CLOSE CAR ANIMATION ********* // --> */
+/* <!-- CLOSE RUNIG CAR PART  --> */
+
+/* <!-- START TEXT PART --> */
 
 .welcome-text{
 	line-height: 1.5;
@@ -341,10 +344,10 @@ nav ul li a:hover{
 	}
   }
 
-/* <!-- // ********* START Home SHOP NOW BUTTON ********* // --> */
+/* <!-- START TEXT PART --> */
+/* <!-- START BUTTON --> */
 
 .home-btn{
-	font-size: 1vw;	
 	border: none;
 	border-radius: 50px;
 	margin-top: 2vw;
@@ -368,11 +371,11 @@ nav ul li a:hover{
 	}
   }
 
-/* <!-- // ********* CLOSE Home SHOP NOW BUTTON ********* // --> */
+/* <!-- CLOSE BUTTON --> */
 
-/* <!-- // ********* Start Tending car ********* // --> */
+/* <!-- Start Tending car --> */
 .home-categories{
-	margin-top: -140px;
+	margin-top: -100px;
 	margin-bottom: 50px;
 	animation: bakul 5s linear 1 ;
 }
