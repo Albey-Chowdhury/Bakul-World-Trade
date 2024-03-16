@@ -203,7 +203,7 @@ nav ul li a{
 }
 nav ul li a:hover{
 	background: var(--black-color);
-	transform: .5s;
+	transform: .3s;
 }
 
 .nav-list-logo-inner{
@@ -448,6 +448,38 @@ nav ul li a:hover{
     font-weight: bold;
  }
 
+ .whole_counter {
+    width: 16rem;
+    height: 15rem;
+    background-color: #5287b6;
+	text-align: center;
+	border: 3px dotted black;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	margin-top: 35px;
+}
+.counterIcon{
+	font-size: 50px;
+	margin-top: 10px;
+}
+.counter_card{
+	display: flex;
+	justify-content: center;
+}
+.counter_header{
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: 35px;
+	
+}
+.counter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	font-size: 40px;
+	color: #ffffff;
+}
+
  /* end about css */
 
 /* **************** START SHOP  *************** 
@@ -487,9 +519,6 @@ nav ul li a:hover{
     text-align: center;
 	justify-content: center;
 }
-
-
-
 /* end featured css */
 
 /* service part start */
