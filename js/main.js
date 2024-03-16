@@ -13,3 +13,12 @@ function closesidebar(){
     sidebar.style.display = 'none'
 }
 
+
+// count timing start
+$(document).ready(function(){
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1200
+    });
+});
+// count timing end
