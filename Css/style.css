@@ -522,32 +522,11 @@ nav ul li a:hover{
 /* end featured css */
 
 /* service part start */
-.service_image{
+.choose-imge-box{
+	width: 100%;
 	height: 100%;
-	width: 600px;
 }
-.service_sub_head{
-	margin-right: 5px;
-}
-.service_sub_head h2{
-	color: #454545;
-	font-weight: bold;
-}
-.service_sub_head p{
-	font-size: 18px;
-	margin-top: 15px;
-}
-.service_icon{
-	margin-left: 3rem;
-}
-.service_icon_one{
-	font-size: 5rem;
-	color: #0089ff;
-}
-.service_icon_two{
-	font-size: 5rem;
-	color: #0089ff;
-}
+
 /* service part end */
 
 /* start contact part  */
