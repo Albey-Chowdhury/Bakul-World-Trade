@@ -352,8 +352,6 @@ nav ul li a:hover{
 	border: none;
 	border-radius: 50px;
 	margin-top: 2vw;
-	background-color: transparent;
-	position: absolute;
 	animation: shop-now 3s linear 1 ;
 }
 
