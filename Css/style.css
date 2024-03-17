@@ -609,9 +609,12 @@ textarea.contact_input {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid #0089ff;
+    border: 3px solid #0089ff;
+	margin-bottom: 30px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .contact-icon{
@@ -648,8 +651,11 @@ textarea.contact_input {
 }
 /* close contact part */
 
-.trade_map{
-	width: 100%;
+.trade_map {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* **************** START FOOTER  *************** 
