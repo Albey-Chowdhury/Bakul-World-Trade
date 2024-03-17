@@ -101,11 +101,47 @@ a{
 }
 /* <!-- CLOSE BUTTON --> */
 /* <!-- START ANIMITON --> */
-.fadeInLeft{
-	animation: fadeInLeft 5s;
+.fadeIn{
+	animation: fadein 5s;
 	animation-timeline: view();
+	animation-range-start: 200px;
+	animation-range-end: contain;
 }
-@keyframes fadeInLeft{
+@keyframes fadein{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+
+	}
+}
+.fadeOut{
+	animation: fadeout 5s;
+	animation-timeline: view();
+	animation-range-start: 200px;
+	animation-range-end: contain;
+}
+@keyframes fadeout{
+	0%{
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+
+	}
+}
+.fadeLeft{
+	animation: fadeLeft 5s;
+	animation-timeline: view();
+	animation-range-start: 200px;
+	animation-range-end: contain;
+}
+@keyframes fadeLeft{
 	0%{
 		opacity: 0;
 		transform: translateX(-50%);
@@ -116,12 +152,13 @@ a{
 
 	}
 }
-.fadeInRight{
-	animation: fadeInRight 5s forwards;
+.fadeRight{
+	animation: fadeRight 5s;
 	animation-timeline: view();
-	animation-range: 250px 500px;
+	animation-range-start: 200px;
+	animation-range-end: contain;
 }
-@keyframes fadeInRight{
+@keyframes fadeRight{
 	0%{
 		opacity: 0;
 		transform: translateX(50%);
@@ -485,14 +522,14 @@ nav ul li a:hover{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	border-right: 6px solid gray;
-	border-bottom: 5px solid gray;
+	border-right: 3px solid gray;
+	border-bottom: 2px solid gray;
 	border-radius: 0px 20px 120px 20px;
 }
 
 .about-text-box p{
 	font-size: 1.3rem;
-	font-family: 'Oleo Script', cursive;
+	font-weight: 300;
 	color: gray;
 }
 
@@ -505,14 +542,34 @@ nav ul li a:hover{
     font-weight: bold;
  }
 
- .whole_counter {
+ .whole_counter{
     width: 16rem;
     height: 15rem;
-    background-color: #5287b6;
+	background-color: #fff;
 	text-align: center;
-	border: 3px dotted black;
 	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.whole_counter::after{
+	content: '';
+	position: absolute;
+	inset: 20px;
+	z-index: -1;
+	background-color: var(--Secondary-color);
+	animation: roted 3s linear infinite forwards;
+}
+@keyframes roted{
+	100%{
+		rotate: 360deg;
+	}
+}
+.whole_counter:hover{
+	transform: scale(1.1);
+	z-index: -1;
 }
 .counterIcon{
 	font-size: 50px;
@@ -525,8 +582,8 @@ nav ul li a:hover{
 .counter_header{
 	font-size: 25px;
 	font-weight: 700;
-	margin-top: 35px;
-	
+	color: var(--Secondary-color);
+	opacity: .5;
 }
 .counter{
 	display: flex;
@@ -534,7 +591,35 @@ nav ul li a:hover{
 	align-items: center;
 	margin-top: 5px;
 	font-size: 40px;
-	color: #ffffff;
+	color: transparent;
+	-webkit-text-stroke: 1px;
+    -webkit-text-stroke-color:var(--Secondary-color);
+}
+.about-choose{
+	text-align: center;
+}
+.about-choose hr{
+	width: 80%;
+	margin:0 auto;
+	border: 1px solid var(--Secondary-color);
+}
+.about-section-title h2{
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--Primary-color);
+	
+}
+.about-section-title span{
+	color: var(--Secondary-color);
+}
+.about-content h4{
+	font-weight: bold;
+	color: var(--Secondary-color);
+}
+.about-content p{
+	font-size: 1.2rem;
 }
 
  /* end about css */
