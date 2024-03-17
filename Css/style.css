@@ -554,26 +554,24 @@ nav ul li a:hover{
 	align-items: center;
 	position: relative;
 }
-.whole_counter::after{
+.whole_counter::before{
 	content: '';
 	position: absolute;
 	inset: 20px;
 	z-index: -1;
 	background-color: var(--Secondary-color);
-	animation: roted 3s linear infinite forwards;
+	animation: roted 20s linear infinite forwards;
 }
 @keyframes roted{
 	100%{
 		rotate: 360deg;
 	}
 }
-.whole_counter:hover{
-	transform: scale(1.1);
-	z-index: -1;
-}
+
 .counterIcon{
-	font-size: 50px;
-	margin-top: 10px;
+	font-size: 40px;
+	color: var(--Primary-color);
+	opacity: .5;
 }
 .counter_card{
 	display: flex;
