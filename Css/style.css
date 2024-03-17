@@ -522,11 +522,47 @@ nav ul li a:hover{
 /* end featured css */
 
 /* service part start */
+.about-imge-box{
+	height: 600px;
+}
+.about-imge{
+	width: 100%;
+	height: 100%;
+	animation: fadeInLeft;
+	animation-timeline: view();
+}
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translate(-50%,-50%);
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.about-text-box p{
+	font-size: 1.1rem;
+	animation: fadeInRight;
+	animation-timeline: view();
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translate(50%,50%);
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 .choose-imge-box{
+	animation: fadeInRight;
+}
+
+.choose-imge{
 	width: 100%;
 	height: 100%;
 }
-
 /* service part end */
 
 /* start contact part  */
