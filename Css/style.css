@@ -19,8 +19,7 @@ html{
     
 }
 section{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:0;
 }
 
 
@@ -680,10 +679,28 @@ nav ul li a:hover{
 	height: 80%;
     width: 80%;
 	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;	
 }
+.owner_details{
+    height: 24rem;
+    margin-top: 25px;
+    border: 1px solid black;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.owner_details h1{
+    margin-left: 20px;
+    margin-top: 2rem;
+    font-weight: bold;
 
+}
+.owner_details p {
+    margin-left: 20px;
+    font-family: initial;
+    font-size: 17px;
+}
  /* end about css */
 
 /* **************** START SHOP  *************** 
@@ -937,7 +954,6 @@ textarea.contact_input {
 .mainBg{
 	background-color: #324A5E;
 	color: white;
-	margin-top: 7rem;
 }
 .Footer_head {
     margin-top: 20px;
