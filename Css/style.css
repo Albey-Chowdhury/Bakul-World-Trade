@@ -736,8 +736,20 @@ nav ul li a:hover{
 	background-repeat: no-repeat;
 }
 
+.client_box_two{
+	display: flex;
+	justify-content: center;
+	height: 550px;
+	align-items: center;
+}
+.client_box_two hr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid var(--Secondary-color);
+}
 .client_header_one {
-	background: linear-gradient(90deg, rgba(186,252,200,1) 10%, rgba(186,252,243,1) 23%, rgba(0,255,252,0.7959558823529411) 91%);
+	background: #ffffff90;
     height: 21rem;
     margin-top: 5rem;
     border-radius: 10px;
@@ -747,7 +759,6 @@ nav ul li a:hover{
 .client_detail{
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .client_header_one img{
@@ -760,36 +771,40 @@ nav ul li a:hover{
 .client_company{
 	font-size: 20px;
 }
-.client_header_one h3 {
-    margin-left: 20px;
-    margin-top: 15px;
-    font-size: 30px;
-    font-weight: 700;
+.client_info{
+	margin: 20px;
 }
-.client_header_one h4 {
-    margin-left: 20px;
-    margin-top: 15px;
-	
+.client_info h3{
+	font-size: 50px;
+	font-weight: bold;
+	color: transparent;
+	-webkit-text-stroke: 1px;
+    -webkit-text-stroke-color:var(--Secondary-color);
 }
-.client_header_one h5 {
-    margin-left: 20px;
-    margin-top: 15px;
-	
+.client_info h4{
+	font-size: 25px;
+	font-weight: bold;
+	color: var(--Primary-color);
 }
+.client_info h6{
+	font-size: 15px;
+	color: gray;
+}
+
 .client_header_one p{
 	margin-left: 20px;
+	font-family: 'Oleo Script', cursive;
+	color: rgb(105, 105, 105);
+
 }
 .client_icon{
 	margin-left: 20px;
-	color: var(--Primary-color);
+	color: var(--Secondary-color);
 }
 .rating{
-	color: gray;
-	font-size: 16px;
+	color:var(--Primary-color);
+	font-size: 10px;
 }
-
-
-
 
 /* testimonial part end */
 

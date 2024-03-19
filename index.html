@@ -1,217 +1,219 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bakul World Trade</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial scale=1.0">
-	<link rel="shortcut icon" type="x-icon" href="image/tap logo.png" >
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/all.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-</head>
+   <head>
+      <title>Bakul World Trade</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial scale=1.0">
+      <link rel="shortcut icon" type="x-icon" href="image/tap logo.png" >
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   </head>
    <body>
-
-	<!-- // ********* START LODER ********* // -->
-
-	<div class="loader">
-		<div class="load-text">
-		  <div class="loaded-text">B</div>
-		  <div class="loading-text">akul World Trad</div>
-		</div>
-	</div>  
-
-	<!-- // ********* CLOSE LODER ********* // -->
-	
-	<!-- // ********* START NAVBAR ********* // -->
-	<nav class="container">
-		<a class="nav-list-logo-inner" href="index.html"><img src="Image/navlogo.jpg" class="nav-logo-image"></a>
-		<ul>
-			 <li class="hideOnModile"><a id="active" href="#index">HOME</a></li>
-			 <li class="hideOnModile"> <a href="#about">ABOUT</a></li>
-			 <li class="hideOnModile"> <a href="#cars">Shop</a></li>
-			 <li class="hideOnModile"><a href="#contact">CONTACT US</a></li>			
-			<li id="navShow" class="menu-button" onclick="showsidebar()"><a href="#"><svg class="ee" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-		</ul>
-		
-		<ul class="sidebar">
-			<li class="close" onclick="closesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-			 <li><a href="#index">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-			 <li><a href="#shop">Shop</a></li>
-			 <li><a href="#contact">CONTACT US</a></li>
-		</ul>
-	</nav>
-</div>
-
-	<!-- // ********* CLOSE NAVBAR ********* // -->
-	
-	<!-- // ********* Start Index ********* // -->
-	<section id="index">
-	<!-- // ********* START CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
-   <div class="col-md-12 mt-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="introduction-text">
-                  <li class="welcome-to">Welcome to</li>
-                  <li class="bakul">Bakul world trade</li>
-                  <li class="buy">Buy your favorite or dream carAt your home </li>
-                  <li><a href="#"><button class="global-btn home-btn">Shop Now ⨠</button></a></li>
-               </div>
-				</div>
-				<div class="col-md-6">
-					<div id="carouselExampleRide" class="carousel slide runigCar" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active" data-interval="500">
-                        <img src="Image/c.png" class="d-block w-100">
-                     </div>
-                     <div class="carousel-item" data-interval="1000">
-                        <img src="Image/c1.png" class="d-block w-100" >
-                     </div>
-                     <div class="carousel-item" data-interval="1000">
-                        <img src="Image/c2.png" class="d-block w-100" >
+      <!-- // ********* START LODER ********* // -->
+      <div class="loader">
+         <div class="load-text">
+            <div class="loaded-text">B</div>
+            <div class="loading-text">akul World Trad</div>
+         </div>
+      </div>
+      <!-- // ********* CLOSE LODER ********* // -->
+      <!-- // ********* START NAVBAR ********* // -->
+      <nav class="container">
+         <a class="nav-list-logo-inner" href="index.html"><img src="Image/navlogo.jpg" class="nav-logo-image"></a>
+         <ul>
+            <li class="hideOnModile"><a id="active" href="#index">HOME</a></li>
+            <li class="hideOnModile"> <a href="#about">ABOUT</a></li>
+            <li class="hideOnModile"> <a href="#cars">Shop</a></li>
+            <li class="hideOnModile"><a href="#contact">CONTACT US</a></li>
+            <li id="navShow" class="menu-button" onclick="showsidebar()">
+               <a href="#">
+                  <svg class="ee" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <ul class="sidebar">
+            <li class="close" onclick="closesidebar()">
+               <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                  </svg>
+               </a>
+            </li>
+            <li><a href="#index">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+         </ul>
+      </nav>
+      </div>
+      <!-- // ********* CLOSE NAVBAR ********* // -->
+      <!-- // ********* Start Index ********* // -->
+      <section id="index">
+         <!-- // ********* START CAR ANIMATION & WELCOME ANIMATION SECTION ********* // -->
+         <div class="col-md-12 mt-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="introduction-text">
+                        <li class="welcome-to">Welcome to</li>
+                        <li class="bakul">Bakul world trade</li>
+                        <li class="buy">Buy your favorite or dream carAt your home </li>
+                        <li><a href="#"><button class="global-btn home-btn">Shop Now ⨠</button></a></li>
                      </div>
                   </div>
-               </div>
-				</div>
-			</div>
-		</div>
-	</div>	
-	<!-- CLOSE CAR ANIMATION & WELCOME ANIMATION SECTION -->
-	<!-- trainding part start -->
-	 	<div class="mb-5">
-         <div class="col-md-12 home-trainding">
-                     <div class="container">
-                        <div class="row">		
-                           <h1 class="top-heading trainding-heding">Trainding</h1>
+                  <div class="col-md-6">
+                     <div id="carouselExampleRide" class="carousel slide runigCar" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active" data-interval="500">
+                              <img src="Image/c.png" class="d-block w-100">
+                           </div>
+                           <div class="carousel-item" data-interval="1000">
+                              <img src="Image/c1.png" class="d-block w-100" >
+                           </div>
+                           <div class="carousel-item" data-interval="1000">
+                              <img src="Image/c2.png" class="d-block w-100" >
+                           </div>
                         </div>
                      </div>
                   </div>
-               <div class="container">
-                  <div class="col-md-12 card-carousel trainding-carousel">
-                     <div class="row">
-                        <div class="col-md-4 my-card"><img src="Image/yellow-car.jpg"></div>
-                        <div class="col-md-4 my-card my-card2"><img src="Image/supercar.webp"></div>
-                        <div class="col-md-4 my-card"><img src="Image/supercar1.jpg"></div>
-                     </div>
-                  </div>
                </div>
-      </div>
-	<!-- // ********* trainding part close ********* // -->
-	</section>		
-	<!-- // ********* Close Index ********* // -->
-
-   <!-- About part start -->
-   <section id="about">
-      <div class="col-md-12">
-         <div class="container">
-            <div class="row">		
-               <h1 class="top-heading mb-5">About</h1>
             </div>
          </div>
-      </div>
-   <div class="col-md-12">
-      <div class="container">
-         <div class="row">
+         <!-- CLOSE CAR ANIMATION & WELCOME ANIMATION SECTION -->
+         <!-- trainding part start -->
+         <div class="mb-5">
+            <div class="col-md-12 home-trainding">
+               <div class="container">
+                  <div class="row">
+                     <h1 class="top-heading trainding-heding">Trainding</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="col-md-12 card-carousel trainding-carousel">
+                  <div class="row">
+                     <div class="col-md-4 my-card"><img src="Image/yellow-car.jpg"></div>
+                     <div class="col-md-4 my-card my-card2"><img src="Image/supercar.webp"></div>
+                     <div class="col-md-4 my-card"><img src="Image/supercar1.jpg"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- // ********* trainding part close ********* // -->
+      </section>
+      <!-- // ********* Close Index ********* // -->
+      <!-- About part start -->
+      <section id="about">
+         <div class="col-md-12">
+            <div class="container">
+               <div class="row">
+                  <h1 class="top-heading mb-5">About</h1>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12">
+            <div class="container">
+               <div class="row">
                   <div class="col-md-6 d-flex justify-content-center align-items-center about-imge-box fadeLeft">
                      <img class="about-imge" src="Image/choose.png">
                   </div>
-               <div class="col-md-6 d-flex align-items-center fadeRight">
-                  <div class="about-text-box">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil quam accusantium at quis unde repellendus maiores iusto, ipsum iure maxime ea explicabo, sapiente laboriosam voluptates doloremque? Nam consectetur incidunt tenetur sed maxime ratione deserunt vel, fugit aperiam, qui ipsum at quas aut! Ipsum necessitatibus ea accusantium dolorem molestiae magnam!</p>
-                  </div>
-               </div>
-         </div>
-      </div>
-   </div>
-   <div class="col-md-12">
-      <div class="container">
-         <div class="about-choose fadeIn">
-                     <div class="about-section-title">
-                        <h2><span>◦◦◦</span>why you choose us</h2>
+                  <div class="col-md-6 d-flex align-items-center fadeRight">
+                     <div class="about-text-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil quam accusantium at quis unde repellendus maiores iusto, ipsum iure maxime ea explicabo, sapiente laboriosam voluptates doloremque? Nam consectetur incidunt tenetur sed maxime ratione deserunt vel, fugit aperiam, qui ipsum at quas aut! Ipsum necessitatibus ea accusantium dolorem molestiae magnam!</p>
                      </div>
-               <ul class="list-style-one mt-5">
-                  <li>
-                     <div class="about-content">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ratione?</p>
-                     </div>
-                     <hr>
-                  </li>
-                  <li>
-                     <div class="about-content">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, harum.</p>
-                     </div>
-                     <hr>
-                  </li>
-                  <li>
-                     <div class="about-content">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, harum.</p>
-                     </div>
-                     <hr>
-                  </li>
-               </ul>
-         </div>
-      </div>
-   </div>
-   <div class="col-md-12 whole-counter">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4 mb-4 counter_card">
-                  <div class="counter-box">
-                     <i class="fa-solid fa-car counterIcon"></i>
-                     <h2 class="counter_header">Cars In Stock</h2>
-                     <h3 class="counter">105</h3>
-                  </div>
-               </div>
-               <div class="col-md-4 mb-4 counter_card">
-                  <div class="counter-box">
-                     <i class="fa-solid fa-circle-check counterIcon"></i>
-                     <div class="counter_header">Car Sell</div>
-                     <h3 class="counter">702</h3>
-                  </div>
-               </div>
-               <div class="col-md-4 mb-4 counter_card">
-                  <div class="counter-box">
-                     <i class="fa-regular fa-face-smile counterIcon"></i>
-                     <div class="counter_header">Happy Customers</div>
-                     <h3 class="counter">1005</h3>
                   </div>
                </div>
             </div>
          </div>
-   </div>
-   <!-- Woner Part Start -->
-   <div class="col-md-12 Whole-Woner-part">
-      <div class="container">
-         <div class="row">
-         <div class="col-md-4">
-            <div class="Woner-img-box"><img src="Image/woner.png" class="Woner-img"></div>
+         <div class="col-md-12">
+            <div class="container">
+               <div class="about-choose fadeIn">
+                  <div class="about-section-title">
+                     <h2><span>◦◦◦</span>why you choose us</h2>
+                  </div>
+                  <ul class="list-style-one mt-5">
+                     <li>
+                        <div class="about-content">
+                           <h4>Lorem, ipsum.</h4>
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ratione?</p>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="about-content">
+                           <h4>Lorem, ipsum.</h4>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, harum.</p>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="about-content">
+                           <h4>Lorem, ipsum.</h4>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, harum.</p>
+                        </div>
+                        <hr>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
-         <div class="col-md-8"></div>
-      </div>
-      </div>
-   </div>
-   <!-- Woner Part Close -->
-    </section>
-   <!-- About part end -->
-  
-   <!-- shop part start -->
-       <section id="cars">
+         <div class="col-md-12 whole-counter">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 mb-4 counter_card">
+                     <div class="counter-box">
+                        <i class="fa-solid fa-car counterIcon"></i>
+                        <h2 class="counter_header">Cars In Stock</h2>
+                        <h3 class="counter">105</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4 counter_card">
+                     <div class="counter-box">
+                        <i class="fa-solid fa-circle-check counterIcon"></i>
+                        <div class="counter_header">Car Sell</div>
+                        <h3 class="counter">702</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4 counter_card">
+                     <div class="counter-box">
+                        <i class="fa-regular fa-face-smile counterIcon"></i>
+                        <div class="counter_header">Happy Customers</div>
+                        <h3 class="counter">1005</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Woner Part Start -->
+         <div class="col-md-12 Whole-Woner-part">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="Woner-img-box"><img src="Image/woner.png" class="Woner-img"></div>
+                  </div>
+                  <div class="col-md-8"></div>
+               </div>
+            </div>
+         </div>
+         <!-- Woner Part Close -->
+      </section>
+      <!-- About part end -->
+      <!-- shop part start -->
+      <section id="cars">
          <div class="col-md-12 mb-5">
             <div class="container">
-               <div class="row">		
+               <div class="row">
                   <h1 class="top-heading mb-5">Shop</h1>
                </div>
             </div>
          </div>
-
          <div class="col-md-12">
             <div class="container">
                <div class="row whole_cards">
@@ -259,7 +261,7 @@
                            <a class="d-flex justify-content-center text-decoration-none" href="#"><button class="shop_btn global-btn">View Details ⨠</button></a>
                         </div>
                      </div>
-                  </div>  
+                  </div>
                   <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
                      <div class="card main_card" style="width: 40rem;">
                         <img src="Image/car-image-3.jpg" class="card-img-top" alt="...">
@@ -304,7 +306,7 @@
                            <a class="d-flex justify-content-center text-decoration-none" href="#"><button class="shop_btn global-btn">View Details ⨠</button></a>
                         </div>
                      </div>
-                  </div>  
+                  </div>
                   <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
                      <div class="card main_card" style="width: 40rem;">
                         <img src="Image/car-image-2.jpg" class="card-img-top" alt="...">
@@ -319,7 +321,7 @@
                            <a class="d-flex justify-content-center text-decoration-none" href="#"><button class="shop_btn global-btn">View Details ⨠</button></a>
                         </div>
                      </div>
-                  </div>  
+                  </div>
                   <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
                      <div class="card main_card" style="width: 40rem;">
                         <img src="Image/car-image-10.jpg" class="card-img-top" alt="...">
@@ -334,23 +336,14 @@
                            <a class="d-flex justify-content-center text-decoration-none" href="#"><button class="shop_btn global-btn">View Details ⨠</button></a>
                         </div>
                      </div>
-                  </div>  
+                  </div>
                </div>
             </div>
          </div>
-       </section>
-       <!-- shop part end --> 
-
-       <!-- views part start -->
-       <section>
-         <div class="col-md-12 mb-5">
-            <div class="container">
-               <div class="row">		
-                  <h1 class="top-heading mb-5">OUR TESTIMONIAL</h1>
-               </div>
-            </div>
-         </div>
-
+      </section>
+      <!-- shop part end --> 
+      <!-- views part start -->
+      <section>
          <div class="testimonial_bg col-md-12">
             <div class="container">
                <div class="row">
@@ -363,7 +356,7 @@
                            <div class="client_info">
                               <h3>Mr.Bean</h3>
                               <h4>AIS tech info</h4>
-                              <h5>Office Manager</h5>
+                              <h6>Office Manager</h6>
                            </div>
                         </div>
                         <hr>
@@ -373,7 +366,7 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star-half"></i> 
+                           <i class="fa-solid fa-star"></i> 
                            <span class="rating">Rating</span>
                         </div>
                      </div>
@@ -387,7 +380,7 @@
                            <div class="client_info">
                               <h3>Mr.Bean</h3>
                               <h4>AIS tech info</h4>
-                              <h5>Office Manager</h5>
+                              <h6>Office Manager</h6>
                            </div>
                         </div>
                         <hr>
@@ -397,7 +390,7 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star-half"></i> 
+                           <i class="fa-solid fa-star"></i> 
                            <span class="rating">Rating</span>
                         </div>
                      </div>
@@ -405,85 +398,80 @@
                </div>
             </div>
          </div>
-       </section>
-       <!-- views part end -->
-
-
+      </section>
+      <!-- views part end -->
       <!-- ********* START Contact ************** -->
-         <section id="contact">
-            <div class="col-md-12 mb-5">
+      <section id="contact">
+         <div class="col-md-12 mb-5">
+            <div class="container">
+               <div class="row">
+                  <h1 class="top-heading mb-5">Contact Us</h1>
+               </div>
+            </div>
+         </div>
+         <div class="rel whol-contact-from">
+            <div class="col-md-12 rel mt-5">
                <div class="container">
-                  <div class="row">		
-                     <h1 class="top-heading mb-5">Contact Us</h1>
+                  <div class="row main_contact_form">
+                     <div class="col-md-8">
+                        <h1 class="contact_header">We Are Here !</h1>
+                        <form action="#" class="contact-form">
+                           <div class="col-md-9 mb-4 mt-5">
+                              <input type="text" class="form-control contact_input" placeholder="Username" />
+                           </div>
+                           <div class="col-md-9 mb-4">
+                              <input type="email" name="email" class="form-control contact_input" placeholder="Enter Your Email"/>
+                           </div>
+                           <div class="col-md-9">
+                              <textarea name="massage" class="form-control contact_input" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
+                           </div>
+                           <div>
+                              <a href="#">
+                              <button class="global-btn mt-5 mb-5">Send Massage</button>
+                              </a>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="col-md-4">
+                        <iframe class="trade_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.67823556909434!2d91.81211818009615!3d22.321445101116513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf759eea8b91%3A0x4a0dede3678c00ae!2sShahjadi%20Chamber!5e0!3m2!1sen!2sbd!4v1710623662493!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
                   </div>
                </div>
             </div>
-			<div class="rel whol-contact-from">
-			   <div class="col-md-12 rel mt-5">
-				  <div class="container">
-					 <div class="row main_contact_form">
-						<div class="col-md-8">
-						   <h1 class="contact_header">We Are Here !</h1>
-                     <form action="#" class="contact-form">
-						   <div class="col-md-9 mb-4 mt-5">
-							  <input type="text" class="form-control contact_input" placeholder="Username" />
-						   </div>
-						   <div class="col-md-9 mb-4">
-							  <input type="email" name="email" class="form-control contact_input" placeholder="Enter Your Email"/>
-						   </div>
-						   <div class="col-md-9">
-							  <textarea name="massage" class="form-control contact_input" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
-						   </div>
-						   <div>
-							  <a href="#">
-								 <button class="global-btn mt-5 mb-5">Send Massage</button>
-							  </a>
-						   </div>
-                  </form>
-						</div>
-                  <div class="col-md-4">
-                     <iframe class="trade_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.67823556909434!2d91.81211818009615!3d22.321445101116513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf759eea8b91%3A0x4a0dede3678c00ae!2sShahjadi%20Chamber!5e0!3m2!1sen!2sbd!4v1710623662493!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-					 </div>
-				  </div>
-			   </div>
             <div class="col-md-12 mt-5">
                <div class="container">
                   <div class="row ">
-                           <div class="col-md-4 contact-icon-box">
-                             <i class="fa-solid fa-location-dot contact-icon z-1 "></i>
-                             <span class="z-1">LOCATION</span>
-                             <p class="z-1 text-center">133/B, Shahajadi Chamber (7th Floor)Sk.Mujib Road,Agrabad Chattogram,Bangladesh.</p>
-                           </div>
-
-                           <div class=" col-md-4 contact-icon-box">
-                             <i class="fa-solid fa-envelope contact-icon z-1"></i>
-                             <span class="z-1">EMAIL ADDRESS</span>
-                             <p class="z-1 ">bakulwt@gmail.com<br>ajairaInfo@gmail.com</p>
-                           </div>
-
-                           <div class="col-md-4 contact-icon-box rmb-65">
-                             <i class="fa-solid fa-phone contact-icon z-1"></i>
-                             <span class="z-1">PHONE NUMBER</span>
-                             <p class="">01999933944 <br>01999932288</p>
-                           </div>
+                     <div class="col-md-4 contact-icon-box">
+                        <i class="fa-solid fa-location-dot contact-icon z-1 "></i>
+                        <span class="z-1">LOCATION</span>
+                        <p class="z-1 text-center">133/B, Shahajadi Chamber (7th Floor)Sk.Mujib Road,Agrabad Chattogram,Bangladesh.</p>
+                     </div>
+                     <div class=" col-md-4 contact-icon-box">
+                        <i class="fa-solid fa-envelope contact-icon z-1"></i>
+                        <span class="z-1">EMAIL ADDRESS</span>
+                        <p class="z-1 ">bakulwt@gmail.com<br>ajairaInfo@gmail.com</p>
+                     </div>
+                     <div class="col-md-4 contact-icon-box rmb-65">
+                        <i class="fa-solid fa-phone contact-icon z-1"></i>
+                        <span class="z-1">PHONE NUMBER</span>
+                        <p class="">01999933944 <br>01999932288</p>
+                     </div>
                   </div>
                </div>
             </div>
-			</div>
-		 </section>
+         </div>
+      </section>
       <!-- ********* Close Contact ************** -->
-
- 
-
-
-	      <!-- // ********* START FOOTER PART ********* // -->
+      <!-- // ********* START FOOTER PART ********* // -->
       <footer>
          <div class="mainBg col-md-12">
             <div class="container">
                <div class="row">
                   <div class="col-md-4">
-                     <h1 class="Footer_head">WE ARE HERE <hr></h1>
+                     <h1 class="Footer_head">
+                        WE ARE HERE 
+                        <hr>
+                     </h1>
                      <div class="footer_first">
                         <p>
                            GARI-IMPORT.com.bd is a business unit of 𝐙𝐚𝐦𝐚𝐧 𝐓𝐫𝐚𝐝𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥, which is one of the newest and established license holder importer and dealer of Japanese Reconditioned Cars in Bangladesh. 𝐁𝐀𝐑𝐕𝐈𝐃𝐀 𝐌𝐞𝐦𝐛𝐞𝐫 𝐍𝐮𝐦𝐛𝐞𝐫 2105
@@ -594,9 +582,8 @@
          </div>
       </footer>
       <!-- // ********* CLOSE FOOTER PART ********* // -->
-   
-	<script src="js/main.js"></script>
-	<script src="js/all.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
+      <script src="js/main.js"></script>
+      <script src="js/all.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
 </html>
