@@ -642,9 +642,8 @@ nav ul li a:hover{
     height: 80%;
     width: 80%;
     border-radius: 50%;
-    background-color: var(--Primary-color);
-	border: 2px dashed var(--Primary-color);
-	opacity: 1;
+    background: var(--nav-color);
+	opacity: .5;
 }
 .Woner-img-box::after{
     content: '';
@@ -668,8 +667,20 @@ nav ul li a:hover{
 }
 .Woner-img-box:hover::after{
 	transition: 3s;
-	border-color: var(--black-color);
+	border: 2px dashed var(--Primary-color);
 	scale: 0.9;
+}
+
+.Woner-img{
+	position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	height: 80%;
+    width: 80%;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	
 }
 
  /* end about css */
@@ -927,4 +938,4 @@ img.payment_pic {
 }
 
 /* ****************  FOOTER  *************** 
-***************---------------------*********** */
+***************---------------------*********** 
