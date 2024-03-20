@@ -749,8 +749,8 @@ nav ul li a:hover{
 	background: url(/Image/testimonial_image.jpg);
 	width: 100%;
 	height: 600px;
-	background-position: center;
 	background-repeat: no-repeat;
+	
 }
 
 .client_box_two{
@@ -822,6 +822,16 @@ nav ul li a:hover{
 	color:var(--Primary-color);
 	font-size: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+	.testimonial_bg {
+	  width: 100%;
+	  height: 100%;
+	}
+	.client_header_one{
+		margin-top: 0;
+	}
+  }
 
 /* testimonial part end */
 
