@@ -621,10 +621,10 @@ nav ul li a:hover{
 .about-content p{
 	font-size: 1.2rem;
 }
-.Whole-Woner-part{
+.Whole-owner-part{
 	margin-top:100px;
 }
-.Woner-img-box {
+.owner-img-box {
     height: 25vw;
     width: 25vw; 
     max-height: 400px; 
@@ -634,7 +634,7 @@ nav ul li a:hover{
     position: relative; 
 }
 
-.Woner-img-box::before{
+.owner-img-box::before{
     content: '';
     position: absolute;
     top: 50%; 
@@ -647,7 +647,7 @@ nav ul li a:hover{
     opacity: .5;
 }
 
-.Woner-img-box::after{
+.owner-img-box::after{
     content: '';
     position: absolute;
     height: 100%;
@@ -670,12 +670,12 @@ nav ul li a:hover{
     }
 }
 
-.Woner-img-box:hover::after{
+.owner-img-box:hover::after{
     transition: 3s ease;
     scale: 0.9;
 	border-color: #000;
 }
-.Woner-img{
+.owner-img{
     position: absolute;
     top: 50%; 
     left: 50%; 
