@@ -101,14 +101,13 @@ a{
 /* <!-- CLOSE BUTTON --> */
 /* <!-- START ANIMITON --> */
 .fadeIn{
-	animation: fadein 5s;
+	opacity: 0;
+	animation: fadein linear forwards;
 	animation-timeline: view();
-	animation-range-start: 200px;
-	animation-range-end: contain;
+	animation-range: 200px 500px;
 }
 @keyframes fadein{
 	0%{
-		opacity: 0;
 		transform: scale(0);
 	}
 	100%{
@@ -118,14 +117,13 @@ a{
 	}
 }
 .fadeOut{
-	animation: fadeout 5s;
+	opacity: 0;
+	animation: fadeout linear forwards;
 	animation-timeline: view();
-	animation-range-start: 200px;
-	animation-range-end: contain;
+	animation-range: 200px 500px;
 }
 @keyframes fadeout{
 	0%{
-		opacity: 0;
 		transform: scale(1.5);
 	}
 	100%{
@@ -135,14 +133,13 @@ a{
 	}
 }
 .fadeLeft{
-	animation: fadeLeft 5s;
+	opacity: 0;
+	animation: fadeLeft linear forwards;
 	animation-timeline: view();
-	animation-range-start: 200px;
-	animation-range-end: contain;
+	animation-range: 200px 500px;
 }
 @keyframes fadeLeft{
 	0%{
-		opacity: 0;
 		transform: translateX(-50%);
 	}
 	100%{
@@ -152,19 +149,50 @@ a{
 	}
 }
 .fadeRight{
-	animation: fadeRight 5s;
+	opacity: 0;
+	animation: fadeRight linear forwards;
 	animation-timeline: view();
-	animation-range-start: 200px;
-	animation-range-end: contain;
+	animation-range: 200px 500px;
 }
 @keyframes fadeRight{
 	0%{
-		opacity: 0;
 		transform: translateX(50%);
 	}
 	100%{
 		opacity: 1;
 		transform: translateX(0);
+
+	}
+}
+.fadeUp{
+	opacity: 0;
+	animation: fadeUp linear forwards;
+	animation-timeline: view();
+	animation-range: 200px 500px;
+}
+@keyframes fadeUp{
+	0%{
+		transform: translateY(50%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+
+	}
+}
+.fadeDown{
+	opacity: 0;
+	animation: fadeDown linear forwards;
+	animation-timeline: view();
+	animation-range: 200px 500px;
+}
+@keyframes fadeDown{
+	0%{
+		transform: translateY(-50%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
 
 	}
 }
@@ -540,7 +568,7 @@ nav ul li a:hover{
 }
 .about-section-title h2{
 	text-align: center;
-	font-size: 2rem;
+	font-size: 5rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: var(--Primary-color);
@@ -554,7 +582,7 @@ nav ul li a:hover{
 	color: var(--Secondary-color);
 }
 .about-content p{
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .Whole-owner-part{
 	margin-top:100px;
@@ -567,8 +595,12 @@ nav ul li a:hover{
     border-radius: 50%;
     background-color: var(--Secondary-color);
     position: relative; 
+	transform-style: preserve-3d;
 }
-
+.owner-img-box:hover{
+	transition: 3s;
+	transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
 .owner-img-box::before{
     content: '';
     position: absolute;
@@ -620,6 +652,9 @@ nav ul li a:hover{
     border-radius: 50%;
     max-height: 100%;
     max-width: 100%; 
+}
+.owner-img-box:hover ~ .owner-img{
+	scale: 1.1;
 }
 .owner_details{
     border-top-left-radius: 50px;
@@ -753,10 +788,29 @@ nav ul li a:hover{
 	color: rgb(105, 105, 105);
 
 }
-.client_icon{
-	margin-left: 20px;
-	color: var(--Secondary-color);
+.client_icon {
+   --s: 20px;
+   height: calc(var(--s)*0.9);
+   width: calc(var(--s)*5);
+   margin: 20px;
+  --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+  --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+  -webkit-mask:
+    conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+    conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+    conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+    conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+  -webkit-mask-size: var(--s) var(--s);
+  -webkit-mask-composite: xor,destination-over;
+          mask-composite: exclude,add;
+  -webkit-mask-repeat:repeat-x;
+  background:linear-gradient(#45E19F 0 0) left/0% 100% #ddd no-repeat;
+  animation: l20 3s infinite linear alternate;
 }
+@keyframes l20 {
+    90%,100% {background-size:100% 100%}
+}
+
 .rating{
 	color:var(--Primary-color);
 	font-size: 10px;
@@ -984,4 +1038,5 @@ img.payment_pic {
 }
 
 /* ****************  FOOTER  *************** 
-***************---------------------*********** 
+***************---------------------*********** */
+
