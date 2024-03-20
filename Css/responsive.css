@@ -57,11 +57,19 @@
 .trainding-heding{
     margin-bottom: 10px;
 }
+.Woner-img-box{
+    height: 15rem;
+    width: 15rem;
+}
 }
 
 @media(max-width:400px){
     a{
         font-size: 1rem !important;
+    }
+    .Woner-img-box{
+        height: 15rem;
+        width: 15rem;
     }
     .sidebar{
         width: 100%;

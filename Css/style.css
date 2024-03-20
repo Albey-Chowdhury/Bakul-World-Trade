@@ -625,12 +625,13 @@ nav ul li a:hover{
 	margin-top:100px;
 }
 .Woner-img-box {
-    height: 400px;
-    width: 400px;
+    height: 25vw;
+    width: 25vw; 
+    max-height: 400px; 
+    max-width: 400px; 
     border-radius: 50%;
     background-color: var(--Secondary-color);
     position: relative; 
-	margin-top: 9rem;
 }
 
 .Woner-img-box::before{
@@ -643,63 +644,66 @@ nav ul li a:hover{
     width: 80%;
     border-radius: 50%;
     background: var(--nav-color);
-	opacity: .5;
+    opacity: .5;
 }
+
 .Woner-img-box::after{
     content: '';
     position: absolute;
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     border: 2px dashed var(--Primary-color);
-	border-left-color: var(--Secondary-color);
-	border-right-color: var(--Secondary-color);
+    border-left-color: var(--Secondary-color);
+    border-right-color: var(--Secondary-color);
+    transform-origin: center; 
 	scale: 1.1;
-	animation: Woner-box-roted 60s linear infinite forwards;
+    animation: Woner-box-rotated 60s linear infinite forwards;
 }
-@keyframes Woner-box-roted{
-	0% {
+
+@keyframes Woner-box-rotated{
+    0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
 }
-.Woner-img-box:hover::after{
-	transition: 3s;
-	border: 2px dashed var(--Primary-color);
-	scale: 0.9;
-}
 
+.Woner-img-box:hover::after{
+    transition: 3s ease;
+    scale: 0.9;
+	border-color: #000;
+}
 .Woner-img{
-	position: absolute;
+    position: absolute;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-	height: 80%;
+    height: 80%;
     width: 80%;
-	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;	
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%; 
 }
 .owner_details{
-    height: 24rem;
-    margin-top: 25px;
-    border: 1px solid black;
-    background: transparent;
-    border: none;
-    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .owner_details h1{
-    margin-left: 20px;
-    margin-top: 2rem;
+    margin: 20px;
+	color: var(--Secondary-color);
     font-weight: bold;
-
+}
+.owner_details hr{
+	border:1px solid var(--Secondary-color);
 }
 .owner_details p {
     margin-left: 20px;
     font-family: initial;
     font-size: 17px;
+	color: gray;
 }
  /* end about css */
 
