@@ -18,7 +18,7 @@ html{
 	text-decoration: none;   
 }
 section{
-	margin: 100px 0 100px 0;
+	margin: 0;
 }
 a{
 	cursor: pointer;
@@ -37,7 +37,6 @@ a{
 .top-heading{
 	position:relative;
 	top:40px;
-    opacity: 0.50;
     line-height: 1;
     font-size: 50px;
     font-weight: 700;
@@ -399,74 +398,180 @@ nav ul li a:hover{
 	  
 	}
   }
-
 /* <!-- CLOSE BUTTON --> */
-
-/* <!-- Start Tending car --> */
-.home-trainding{
-	margin-top: -100px;
-	margin-bottom: 50px;
-	animation: bakul 5s linear 1 ;
-}
-
-.trainding-carousel{
-	animation: tendingCar 3s linear 1 ;
-}
-
-@keyframes tendingCar{
-	0% {
-	  transform: translateY(10%);
-	}
-	
-	100% {
-	  transform: translateY(0%);
-	}
-}
-
-.card-carousel {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.my-card img{
+/* start brand new cart part */
+.home_card {
+	width: 300px;
+	height: 200px;
+	background: #243137;
+	position: relative;
+	display: grid;
+	place-content: center;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  #logo-main, #logo-second {
+	height: 100%;
+  }
+  
+  #logo-main {
+	fill: #bd9f67;
+  }
+  
+  #logo-second {
+	padding-bottom: 10px;
+	fill: none;
+	stroke: #bd9f67;
+	stroke-width: 1px;
+  }
+  
+  .border {
+	position: absolute;
+	inset: 0px;
+	border: 2px solid #bd9f67;
+	opacity: 0;
+	transform: rotate(10deg);
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .bottom-text {
+	position: absolute;
+	left: 50%;
+	bottom: 13px;
+	transform: translateX(-50%);
+	font-size: 6px;
+	text-transform: uppercase;
+	padding: 0px 5px 0px 8px;
+	color: #bd9f67;
+	background: #243137;
+	opacity: 0;
+	letter-spacing: 7px;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .content {
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .content .logo {
+	height: 35px;
+	position: relative;
+	width: 33px;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+  }
+  
+  .content .logo .logo1 {
+	height: 33px;
+	position: absolute;
+	left: 0;
+  }
+  
+  .content .logo .logo2 {
+	height: 33px;
+	position: absolute;
+	left: 33px;
+  }
+  
+  .content .logo .trail {
+	position: absolute;
+	right: 0;
 	height: 100%;
 	width: 100%;
-}
-
-.my-card2{
-	transform: scale(1.2);
-}
-
-.my-card:hover{
-	transform: scale(1.2);
-	transition: 3s;
-	z-index: 1;
-}
-
-.my-card:hover ~ .my-card2 {
-    transform: scale(1);
-	transition: 3s;
-}
-.my-card:hover ~ .my-card3 {
-    transform: scale(1);
-	transition: 3s;
-}
-
-@media only screen and (max-width:600px){
-	.my-card{
-		margin-bottom: 5px;
+	opacity: 0;
+  }
+  
+  .content .logo-bottom-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 30px;
+	color: #bd9f67;
+	padding-left: 8px;
+	font-size: 11px;
+	opacity: 0;
+	letter-spacing: none;
+	transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  .home_card:hover {
+	border-radius: 0;
+	transform: scale(1.1);
+  }
+  
+  .home_card:hover .logo {
+	width: 134px;
+	animation: opacity 1s ease-in-out;
+  }
+  
+  .home_card:hover .border {
+	inset: 15px;
+	opacity: 1;
+	transform: rotate(0);
+  }
+  
+  .home_card:hover .bottom-text {
+	letter-spacing: 3px;
+	opacity: 1;
+	transform: translateX(-50%);
+  }
+  
+  .home_card:hover .content .logo-bottom-text {
+	opacity: 1;
+	letter-spacing: 9.5px;
+  }
+  
+  .home_card:hover .trail {
+	animation: trail 1s ease-in-out;
+  }
+  
+  @keyframes opacity {
+	0% {
+	  border-right: 1px solid transparent;
 	}
-	.my-card2{
-		transform: scale(1);
+  
+	10% {
+	  border-right: 1px solid #bd9f67;
 	}
-	
-}
-
-/* <!-- Close Tending car --> */
+  
+	80% {
+	  border-right: 1px solid #bd9f67;
+	}
+  
+	100% {
+	  border-right: 1px solid transparent;
+	}
+  }
+  
+  @keyframes trail {
+	0% {
+	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+	  opacity: 0;
+	}
+  
+	30% {
+	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+	  opacity: 1;
+	}
+  
+	70% {
+	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+	  opacity: 1;
+	}
+  
+	95% {
+	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+	  opacity: 0;
+	}
+  }
+/* end brand new cart part */
 
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */
-
+  
  /* start about css */
  .whole-counter{
 	background-color: #fff;
@@ -690,7 +795,7 @@ nav ul li a:hover{
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.card-model{
+.home_card-model{
 	color:var(--Primary-color);
 }
 .price_count,.whole-card hr{
@@ -743,7 +848,10 @@ nav ul li a:hover{
 	display: flex;
 	
 }
-
+.client_image{
+	display: flex;
+	justify-content: center;
+}
 .client_header_one img{
     width: 6rem;
     margin-left: 20px;
@@ -780,6 +888,7 @@ nav ul li a:hover{
 	color: rgb(105, 105, 105);
 	height: 100%;
 	margin-left: 2px;
+	width: 100%;
 
 }
 .client_icon {
@@ -813,6 +922,11 @@ nav ul li a:hover{
 	.testimonial_bg {
 	  width: 100%;
 	  height: 100%;
+	}
+  }
+@media only screen and (max-width: 991px) {
+	.client_header_one p{
+		width: 100%;
 	}
   }
 
@@ -1091,6 +1205,16 @@ img.payment_pic {
 	100% {
 	  transform: translateY(0);
 	  opacity: 1;
+	}
+  }
+
+  @media only screen and (max-width: 767px) {
+	.icon_responsive {
+	  justify-content: center;
+	  display: flex;
+	}
+	.copyrightPart p{
+		text-align: center;
 	}
   }
   
