@@ -14,20 +14,15 @@ body{
 
 html{
 	height: 100%;
-	text-decoration: none;
- 
-    
+	text-decoration: none;   
 }
 section{
     margin:0;
 }
-
-
 a{
 	cursor: pointer;
 	text-decoration: none;
 }
-
 :root{
 	--Primary-color:#29BEF5;
 	--Secondary-color:#45e19f;
@@ -52,7 +47,6 @@ a{
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color:var(--Primary-color);
 }
-
 .top-heading::after {
     content: "";
     width: 13rem;
@@ -726,30 +720,25 @@ nav ul li a:hover{
 	background-repeat: no-repeat;
 	
 }
+.client_detail{
+	background-color: #2e4456;
+}
 
 .client_box_two{
 	display: flex;
-	justify-content: center;
-	height: 550px;
+	justify-content: space-around;
+	height: 480px;
 	align-items: center;
 }
-.client_box_two hr{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border:1px solid var(--Secondary-color);
-}
+
 .client_header_one {
-	background: #ffffff90;
+	background: #f5f0f090;
     height: 21rem;
-    margin-top: 5rem;
+    
     border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	
-}
-.client_detail{
 	display: flex;
-	justify-content: space-between;
+	
 }
 
 .client_header_one img{
@@ -757,7 +746,8 @@ nav ul li a:hover{
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 50%;
-    border: 3px solid var(--Primary-color);
+    border: 3px solid var(--Secondary-color);
+	
 }
 .client_company{
 	font-size: 20px;
@@ -783,16 +773,16 @@ nav ul li a:hover{
 }
 
 .client_header_one p{
-	margin-left: 20px;
 	font-family: 'Oleo Script', cursive;
 	color: rgb(105, 105, 105);
+	height: 100%;
+	margin-left: 2px;
 
 }
 .client_icon {
    --s: 20px;
    height: calc(var(--s)*0.9);
    width: calc(var(--s)*5);
-   margin: 20px;
   --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
   --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
   -webkit-mask:
@@ -1030,12 +1020,77 @@ img.payment_pic {
 	fill: #ffffff;
 }
 
-.copyrightIcon:hover{
-	fill: #06e3ff;
-}
-.footerIconList{
-	justify-content: space-around;
-}
+.footer_card {
+	width: fit-content;
+	height: fit-content;
+	/* padding: 25px 25px; */
+	display: flex;
+	gap: 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+	width: 52px;
+	height: 52px;
+	background-color: rgb(44, 44, 44);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+	background-color: #d62976;
+	transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+	background-color: #00acee;
+	transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+	background-color: #0072b1;
+	transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+	background-color: #128C7E;
+	transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+	transform: scale(0.9);
+	transition-duration: .3s;
+  }
+  
+  .socialSvg {
+	width: 17px;
+  }
+  
+  .socialSvg path {
+	fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+	animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+	0% {
+	  transform: translateY(-50px);
+	  opacity: 0;
+	}
+  
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  
 
 /* ****************  FOOTER  *************** 
 ***************---------------------*********** */
