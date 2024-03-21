@@ -18,7 +18,7 @@ html{
 	text-decoration: none;   
 }
 section{
-    margin:0;
+	margin: 100px 0 100px 0;
 }
 a{
 	cursor: pointer;
@@ -360,9 +360,7 @@ nav ul li a:hover{
 .buy{
 	font-size: 1vw;
 	font-weight: bold;
-	color: transparent;
-	-webkit-text-stroke: 1px;
-	-webkit-text-stroke-color: var(--black-color);
+	color:var(--black-color);
 	font-style: italic;
 	animation: buy 3s linear 1 ;
 }
@@ -471,7 +469,6 @@ nav ul li a:hover{
 
  /* start about css */
  .whole-counter{
-	margin-top: 200px;
 	background-color: #fff;
 	padding: 50px;
 	border-radius: 50px;
@@ -561,7 +558,6 @@ nav ul li a:hover{
     -webkit-text-stroke-color:var(--Secondary-color);
 }
 .about-choose{
-	margin: 100px;
 	text-align: center;
 }
 .about-choose hr{
@@ -587,11 +583,7 @@ nav ul li a:hover{
 .about-content p{
 	font-size: 1rem;
 }
-.Whole-owner-part{
-	margin-top:200px;
-	margin-bottom:200px;
-	
-}
+
 .owner-img-box {
     height: 25vw;
     width: 25vw; 
