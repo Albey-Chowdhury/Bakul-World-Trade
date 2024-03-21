@@ -10,6 +10,7 @@ body{
 	 margin: 0;
      padding: 0;
 	 overflow-x: hidden;
+	 background-color: #EBEDF4 !important;
 } 
 
 html{
@@ -320,6 +321,8 @@ nav ul li a:hover{
 }
 
 .welcome-to{
+	color: var(--Primary-color);
+	opacity: .8;
 	font-size: 5vw;
 	font-family: 'Oleo Script', cursive;
 	animation: welcomeTo 4s linear 1;
@@ -338,7 +341,7 @@ nav ul li a:hover{
   .bakul{
 	font-size: 2vw;
 	font-family: 'Oleo Script', cursive;
-	color: #1b1b1b;
+	color: var(--Primary-color);
 	animation: bakul 3s linear 1 ;
 }
 
@@ -357,7 +360,9 @@ nav ul li a:hover{
 .buy{
 	font-size: 1vw;
 	font-weight: bold;
-	color: #1b1b1b;
+	color: transparent;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: var(--black-color);
 	font-style: italic;
 	animation: buy 3s linear 1 ;
 }
@@ -466,7 +471,10 @@ nav ul li a:hover{
 
  /* start about css */
  .whole-counter{
-	margin-top: 100px;
+	margin-top: 200px;
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 50px;
  }
 .about-imge-box{
 	height: 600px;
@@ -553,6 +561,7 @@ nav ul li a:hover{
     -webkit-text-stroke-color:var(--Secondary-color);
 }
 .about-choose{
+	margin: 100px;
 	text-align: center;
 }
 .about-choose hr{
@@ -579,7 +588,9 @@ nav ul li a:hover{
 	font-size: 1rem;
 }
 .Whole-owner-part{
-	margin-top:100px;
+	margin-top:200px;
+	margin-bottom:200px;
+	
 }
 .owner-img-box {
     height: 25vw;
