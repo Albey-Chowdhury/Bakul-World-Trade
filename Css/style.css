@@ -11,7 +11,8 @@ body{
      padding: 0;
 	 overflow-x: hidden;
 	 background-color: #EBEDF4 !important;
-} 
+}
+
 
 html{
 	height: 100%;
@@ -40,7 +41,6 @@ a{
     line-height: 1;
     font-size: 50px;
     font-weight: 700;
-	margin-bottom: 60px;
     color: transparent;
 	text-align: center;
 	text-transform: uppercase;
@@ -58,6 +58,7 @@ a{
 	left: 50%;
 	transform: translate(-50%,-50%);
     border-radius: 2rem;
+	margin-top: 10px;
 } 
 /* <!-- START BUTTON --> */
 .global-btn {
@@ -399,182 +400,14 @@ nav ul li a:hover{
 	}
   }
 /* <!-- CLOSE BUTTON --> */
-/* start brand new cart part */
-.home_card {
-	width: 300px;
-	height: 200px;
-	background: #243137;
-	position: relative;
-	display: grid;
-	place-content: center;
-	border-radius: 10px;
-	overflow: hidden;
-	transition: all 0.5s ease-in-out;
-  }
-  
-  #logo-main, #logo-second {
-	height: 100%;
-  }
-  
-  #logo-main {
-	fill: #bd9f67;
-  }
-  
-  #logo-second {
-	padding-bottom: 10px;
-	fill: none;
-	stroke: #bd9f67;
-	stroke-width: 1px;
-  }
-  
-  .border {
-	position: absolute;
-	inset: 0px;
-	border: 2px solid #bd9f67;
-	opacity: 0;
-	transform: rotate(10deg);
-	transition: all 0.5s ease-in-out;
-  }
-  
-  .bottom-text {
-	position: absolute;
-	left: 50%;
-	bottom: 13px;
-	transform: translateX(-50%);
-	font-size: 6px;
-	text-transform: uppercase;
-	padding: 0px 5px 0px 8px;
-	color: #bd9f67;
-	background: #243137;
-	opacity: 0;
-	letter-spacing: 7px;
-	transition: all 0.5s ease-in-out;
-  }
-  
-  .content {
-	transition: all 0.5s ease-in-out;
-  }
-  
-  .content .logo {
-	height: 35px;
-	position: relative;
-	width: 33px;
-	overflow: hidden;
-	transition: all 1s ease-in-out;
-  }
-  
-  .content .logo .logo1 {
-	height: 33px;
-	position: absolute;
-	left: 0;
-  }
-  
-  .content .logo .logo2 {
-	height: 33px;
-	position: absolute;
-	left: 33px;
-  }
-  
-  .content .logo .trail {
-	position: absolute;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-  }
-  
-  .content .logo-bottom-text {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	margin-top: 30px;
-	color: #bd9f67;
-	padding-left: 8px;
-	font-size: 11px;
-	opacity: 0;
-	letter-spacing: none;
-	transition: all 0.5s ease-in-out 0.5s;
-  }
-  
-  .home_card:hover {
-	border-radius: 0;
-	transform: scale(1.1);
-  }
-  
-  .home_card:hover .logo {
-	width: 134px;
-	animation: opacity 1s ease-in-out;
-  }
-  
-  .home_card:hover .border {
-	inset: 15px;
-	opacity: 1;
-	transform: rotate(0);
-  }
-  
-  .home_card:hover .bottom-text {
-	letter-spacing: 3px;
-	opacity: 1;
-	transform: translateX(-50%);
-  }
-  
-  .home_card:hover .content .logo-bottom-text {
-	opacity: 1;
-	letter-spacing: 9.5px;
-  }
-  
-  .home_card:hover .trail {
-	animation: trail 1s ease-in-out;
-  }
-  
-  @keyframes opacity {
-	0% {
-	  border-right: 1px solid transparent;
-	}
-  
-	10% {
-	  border-right: 1px solid #bd9f67;
-	}
-  
-	80% {
-	  border-right: 1px solid #bd9f67;
-	}
-  
-	100% {
-	  border-right: 1px solid transparent;
-	}
-  }
-  
-  @keyframes trail {
-	0% {
-	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-	  opacity: 0;
-	}
-  
-	30% {
-	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-	  opacity: 1;
-	}
-  
-	70% {
-	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-	  opacity: 1;
-	}
-  
-	95% {
-	  background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-	  opacity: 0;
-	}
-  }
-/* end brand new cart part */
+
 
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */
   
  /* start about css */
  .whole-counter{
-	background-color: #fff;
+	background: url(/Image/counterBg.jpg);
 	padding: 50px;
 	border-radius: 50px;
  }
@@ -762,6 +595,8 @@ nav ul li a:hover{
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	height: auto;
+	width: 38rem;
 }
 .owner_details h1{
     margin: 20px;
@@ -795,7 +630,7 @@ nav ul li a:hover{
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.home_card-model{
+.card-model{
 	color:var(--Primary-color);
 }
 .price_count,.whole-card hr{
@@ -854,7 +689,6 @@ nav ul li a:hover{
 }
 .client_header_one img{
     width: 6rem;
-    margin-left: 20px;
     margin-top: 20px;
     border-radius: 50%;
     border: 3px solid var(--Secondary-color);
@@ -938,14 +772,14 @@ nav ul li a:hover{
 	margin-top: 6rem;
 	font-size: 40px;
 	font-weight: bold;
-	color: white;
+	color: var(--white-color);
 }
 .whol-contact-from{
     height: auto;
 	background: rgb(255,255,255);
-	background: url(/Image/contact_bg_three.jpg);
+	background: url(/Image/contactBg.jpg);
 	background-position: center;
-	background-repeat: no-repeat;
+	
 	background-size: cover;
 	
 }
@@ -968,7 +802,6 @@ textarea.contact_input {
     font-size: 20px;
 }
 
-  
 .contact-from{
     margin-top: 10rem;
 }
@@ -1004,6 +837,7 @@ textarea.contact_input {
     justify-content: space-around;
     align-items: center;
 	margin-bottom: 30px;
+	background: #0072b185;
 }
 
 .contact-icon{
@@ -1012,26 +846,18 @@ textarea.contact_input {
     border-radius: 50%;
     padding: 15px;
 }
-.contact-icon-box span {
-    color: #0089ff;
-    font-size: 18px;
-    font-weight: bold;
+.contact-icon-box h3{
+	color: white;
 }
 .contact-icon-box p {
     color: var(--white-color);
-	
 	border-radius: 10px;
 	height: 5rem;
 	width: 20rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
     font-size: 15px;
     font-weight: 700;
 	margin-top: 10px;
-}
-.contact-dots{
-    top: 20%;
 }
 .contact_button{
     float: left;
@@ -1053,6 +879,7 @@ textarea.contact_input {
     margin-top: 80px;
     border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	filter: invert(90%);
 }
 
 /* **************** START FOOTER  *************** 
