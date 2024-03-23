@@ -10,7 +10,7 @@ body{
 	 margin: 0;
      padding: 0;
 	 overflow-x: hidden;
-	 background-color: #EBEDF4 !important;
+	 background-color: #e7eaf6 !important;
 }
 
 
@@ -29,6 +29,7 @@ a{
 	--Primary-color:#29BEF5;
 	--Secondary-color:#45e19f;
 	--tertiary-color:#1D3D63;
+	--wave-color:#D0D5E5;
 	--white-color:#fff;
 	--black-color:#000;
 	--nav-color:linear-gradient(176deg, rgba(0,215,250,1) 0%, rgba(95,156,236,1) 97%);
@@ -297,7 +298,6 @@ nav ul li a:hover{
 /* <!-- START HOME   --> */
 #index{
 	height: 100vh;
-	margin-bottom: -100px;
 }
 #index svg:nth-child(1){
 	position: absolute;
@@ -349,7 +349,7 @@ nav ul li a:hover{
   .bakul{
 	font-size: 2vw;
 	font-family: 'Oleo Script', cursive;
-	color: var(--Primary-color);
+	color:var(--Primary-color);
 	animation: bakul 3s linear 1 ;
 }
 
@@ -358,7 +358,6 @@ nav ul li a:hover{
 	  opacity: 0;
 	  transform: translateY(-10%);
 	}
-	
 	100% {
 	  opacity: 1;
 	  transform: translateY(0%);
@@ -368,7 +367,7 @@ nav ul li a:hover{
 .buy{
 	font-size: 1vw;
 	font-weight: bold;
-	color:var(--black-color);
+	color:#48AAEF;
 	font-style: italic;
 	animation: buy 3s linear 1 ;
 }

@@ -9,10 +9,6 @@
     .menu-button{
         display: block;
     }
-    
-    .carandtext{
-        position: relative;
-    }
     .welcome-text{
         text-align:left ;
     }
@@ -74,7 +70,7 @@
     .sidebar{
         width: 100%;
     }
-     .wholslider{
+    .wholslider{
         border-radius: 0px;
     }
     .carandtext{
