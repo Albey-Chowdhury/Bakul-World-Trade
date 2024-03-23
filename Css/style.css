@@ -206,7 +206,6 @@ nav{
 	width: 70%;
 	margin-top: 3vh;
 	border-radius: 50px;
-	box-shadow: 0 0 40px 8px #4d4d4d63;
 	position: sticky;
 	top:0;
 	z-index: 999;
@@ -295,7 +294,16 @@ nav ul li a:hover{
 
 /* <!-- CLOSE NAVBAR  --> */
 
-/* <!-- // START HOME  // --> */
+/* <!-- START HOME   --> */
+#index{
+	height: 100vh;
+	margin-bottom: -100px;
+}
+#index svg:nth-child(1){
+	position: absolute;
+	top: 0;
+} 
+
 /* <!-- START RUNIG CAR PART  --> */
 
 .runigCar{
@@ -305,7 +313,7 @@ nav ul li a:hover{
 
 @keyframes runningCar{
 	0%{
-		transform: translate(-50%,-20%);
+		transform: translate(50%,-20%);
 	}
 	100%{
 		transform: translate(0%,0%);
@@ -522,8 +530,8 @@ nav ul li a:hover{
 }
 
 .owner-img-box {
-    height: 25vw;
-    width: 25vw; 
+    height: 18vw;
+    width: 18vw; 
     max-height: 400px; 
     max-width: 400px; 
     border-radius: 50%;
