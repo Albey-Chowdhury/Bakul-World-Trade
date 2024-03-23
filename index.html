@@ -84,7 +84,7 @@
          <div class="col-md-12">
             <div class="container">
                <div class="row">
-                  <h1 class="top-heading mb-5">About</h1>
+                  <h1 class="top-heading">About</h1>
                </div>
             </div>
          </div>
@@ -151,21 +151,21 @@
                         <div class="counter-box">
                            <i class="fa-solid fa-car counterIcon"></i>
                            <h2 class="counter_header">Cars In Stock</h2>
-                           <h3 class="counter">105</h3>
+                           <h3 class="counter" id="counter1">0</h3>
                         </div>
                      </div>
                      <div class="col-md-4 mb-4 counter_card">
                         <div class="counter-box">
                            <i class="fa-solid fa-circle-check counterIcon"></i>
                            <div class="counter_header">Car Sell</div>
-                           <h3 class="counter">702</h3>
+                           <h3 class="counter" id="counter2">0</h3>
                         </div>
                      </div>
                      <div class="col-md-4 mb-4 counter_card">
                         <div class="counter-box">
                            <i class="fa-regular fa-face-smile counterIcon"></i>
                            <div class="counter_header">Happy Customers</div>
-                           <h3 class="counter">1005</h3>
+                           <h3 class="counter" id="counter3">0</h3>
                         </div>
                      </div>
                   </div>
@@ -177,14 +177,16 @@
             <!-- owner Part Start -->
             <div class="col-md-12 Whole-owner-part">
                <div class="container">
-                  <div class="row gap-5">
-                     <div class="col-md-4 d-flex justify-content-center align-items-center fadeDown">
-                        <div class="owner-img-box"><img src="Image/woner.png" class="owner-img"></div>
-                     </div>
-                     <div class="col-md-7 d-flex align-items-center justify-content-center fadeDown">
+                  <div class="row">
+                     <div class="col-md-8 d-flex align-items-center justify-content-center fadeDown">
                         <div class="owner_details">
                            <h1>Founder</h1><hr>
                            <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur odit reprehenderit quaerat optio aperiam animi cupiditate, maiores reiciendis odio soluta laborum repellendus atque voluptate doloribus placeat dolorem quasi et. Praesentium ipsum soluta autem. Blanditiis reprehenderit alias vero praesentium temporibus facilis atque consequuntur ullam dolores, est ipsam culpa aspernatur. Beatae, obcaecati neque mollitia aliquid ex illum natus magni vero. Fuga ad veritatis doloribus. Explicabo perspiciatis exercitationem possimus delectus, deleniti tempora saepe et magnam incidunt. Ratione.”</p>
+                        </div>
+                     </div>
+                     <div class="col-md-4 d-flex justify-content-center align-items-center fadeDown">
+                        <div class="owner-img-box">
+                           <img src="Image/woner.png" class="owner-img">
                         </div>
                      </div>
                   </div>
@@ -211,7 +213,7 @@
                         <img src="Image/car-imag-5.jpg" class="card-img-top" alt="...">
                         <div class="card-body whole-card">
                            <div class="title_price">
-                              <h5 class="card-model text-uppercase text-uppercase ">Card Model</h5>
+                              <h5 class="card-model text-uppercase text-uppercase ">Car Model</h5>
                               <h5 class="price_count">$49,000</h5>
                            </div>
                            <p class="shop-type-category text-center">NEW CAR | SPORTS</p>
@@ -389,7 +391,7 @@
             <div class="col-md-12 rel mt-5">
                <div class="container">
                   <div class="row main_contact_form">
-                     <div class="col-md-8">
+                     <div class="col-md-7">
                         <h1 class="contact_header">We Are Here !</h1>
                         <form action="#" class="contact-form">
                            <div class="col-md-9 mb-4 mt-5">
@@ -408,29 +410,35 @@
                            </div>
                         </form>
                      </div>
-                     <div class="col-md-4">
-                        <iframe class="trade_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.67823556909434!2d91.81211818009615!3d22.321445101116513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf759eea8b91%3A0x4a0dede3678c00ae!2sShahjadi%20Chamber!5e0!3m2!1sen!2sbd!4v1710623662493!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <div class="col-md-5">
+                        <iframe class="trade_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.67823556909434!2d91.81211818009615!3d22.321445101116513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf759eea8b91%3A0x4a0dede3678c00ae!2sShahjadi%20Chamber!5e0!3m2!1sen!2sbd!4v1710623662493!5m2!1sen!2sbd" width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </div>
                   </div>
                </div>
             </div>
             <div class="col-md-12 mt-5">
                <div class="container">
-                  <div class="row ">
-                     <div class="col-md-4 contact-icon-box">
-                        <i class="fa-solid fa-location-dot contact-icon z-1 "></i>
-                        <span class="z-1">LOCATION</span>
-                        <p class="z-1 text-center">133/B, Shahajadi Chamber (7th Floor)Sk.Mujib Road,Agrabad Chattogram,Bangladesh.</p>
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="contact-icon-box">
+                           <i class="contact-icon fa-solid fa-location-dot"></i>
+                           <h3>Location</h3>
+                           <p>133/B, Shahajadi Chamber (7th Floor)Sk.Mujib Road,Agrabad Chattogram,Bangladesh.</p>
+                        </div>
                      </div>
-                     <div class=" col-md-4 contact-icon-box">
-                        <i class="fa-solid fa-envelope contact-icon z-1"></i>
-                        <span class="z-1">EMAIL ADDRESS</span>
-                        <p class="z-1 ">bakulwt@gmail.com<br>ajairaInfo@gmail.com</p>
+                     <div class="col-md-4">
+                        <div class="contact-icon-box">
+                           <i class="contact-icon fa-solid fa-envelope"></i>
+                           <h3>Email</h3>
+                           <p> bakulwt@gmail.com <br>  bakulwt@gmail.com</p>
+                        </div>
                      </div>
-                     <div class="col-md-4 contact-icon-box rmb-65">
-                        <i class="fa-solid fa-phone contact-icon z-1"></i>
-                        <span class="z-1">PHONE NUMBER</span>
-                        <p class="">01999933944 <br>01999932288</p>
+                     <div class="col-md-4">
+                        <div class="contact-icon-box">
+                           <i class="contact-icon fa-solid fa-phone"></i>
+                           <h3>Phone</h3>
+                           <p>01999933944 <br> 01999932288</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -440,7 +448,7 @@
       <!-- ********* Close Contact ************** -->
       <!-- // ********* START FOOTER PART ********* // -->
       <footer>
-         <div class="mainBg col-md-12">
+         <div class="mainBg col-md-12 mt-5">
             <div class="container">
                <div class="row">
                   <div class="col-md-4">

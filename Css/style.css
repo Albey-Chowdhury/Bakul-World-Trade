@@ -11,7 +11,8 @@ body{
      padding: 0;
 	 overflow-x: hidden;
 	 background-color: #EBEDF4 !important;
-} 
+}
+
 
 html{
 	height: 100%;
@@ -40,7 +41,6 @@ a{
     line-height: 1;
     font-size: 50px;
     font-weight: 700;
-	margin-bottom: 60px;
     color: transparent;
 	text-align: center;
 	text-transform: uppercase;
@@ -58,6 +58,7 @@ a{
 	left: 50%;
 	transform: translate(-50%,-50%);
     border-radius: 2rem;
+	margin-top: 10px;
 } 
 /* <!-- START BUTTON --> */
 .global-btn {
@@ -405,7 +406,7 @@ nav ul li a:hover{
   
  /* start about css */
  .whole-counter{
-	background-color: #fff;
+	background: url(/Image/counterBg.jpg);
 	padding: 50px;
 	border-radius: 50px;
  }
@@ -593,6 +594,8 @@ nav ul li a:hover{
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	height: auto;
+	width: 38rem;
 }
 .owner_details h1{
     margin: 20px;
@@ -626,7 +629,7 @@ nav ul li a:hover{
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.home_card-model{
+.card-model{
 	color:var(--Primary-color);
 }
 .price_count,.whole-card hr{
@@ -685,7 +688,6 @@ nav ul li a:hover{
 }
 .client_header_one img{
     width: 6rem;
-    margin-left: 20px;
     margin-top: 20px;
     border-radius: 50%;
     border: 3px solid var(--Secondary-color);
@@ -769,14 +771,14 @@ nav ul li a:hover{
 	margin-top: 6rem;
 	font-size: 40px;
 	font-weight: bold;
-	color: white;
+	color: var(--white-color);
 }
 .whol-contact-from{
     height: auto;
 	background: rgb(255,255,255);
-	background: url(/Image/contact_bg_three.jpg);
+	background: url(/Image/contactBg.jpg);
 	background-position: center;
-	background-repeat: no-repeat;
+	
 	background-size: cover;
 	
 }
@@ -799,7 +801,6 @@ textarea.contact_input {
     font-size: 20px;
 }
 
-  
 .contact-from{
     margin-top: 10rem;
 }
@@ -835,6 +836,7 @@ textarea.contact_input {
     justify-content: space-around;
     align-items: center;
 	margin-bottom: 30px;
+	background: #0072b185;
 }
 
 .contact-icon{
@@ -843,26 +845,18 @@ textarea.contact_input {
     border-radius: 50%;
     padding: 15px;
 }
-.contact-icon-box span {
-    color: #0089ff;
-    font-size: 18px;
-    font-weight: bold;
+.contact-icon-box h3{
+	color: white;
 }
 .contact-icon-box p {
     color: var(--white-color);
-	
 	border-radius: 10px;
 	height: 5rem;
 	width: 20rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
     font-size: 15px;
     font-weight: 700;
 	margin-top: 10px;
-}
-.contact-dots{
-    top: 20%;
 }
 .contact_button{
     float: left;
@@ -884,6 +878,7 @@ textarea.contact_input {
     margin-top: 80px;
     border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	filter: invert(90%);
 }
 
 /* **************** START FOOTER  *************** 
