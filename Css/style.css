@@ -207,8 +207,7 @@ nav{
 	width: 70%;
 	margin-top: 3vh;
 	border-radius: 50px;
-	position: sticky;
-	top:0;
+	position: relative;
 	z-index: 999;
 }
 nav ul{
@@ -233,7 +232,7 @@ nav ul li a{
 
 }
 nav ul li a:hover{
-	background: var(--black-color);
+	color: var(--Secondary-color);
 	transform: .3s;
 }
 
@@ -260,7 +259,9 @@ nav ul li a:hover{
     height: 20px;
 
 }
-
+#nav-active{
+		background: var(--black-color);
+}
 .sidebar{
 	position: fixed;
 	top: 0;
@@ -296,7 +297,6 @@ nav ul li a:hover{
 /* <!-- CLOSE NAVBAR  --> */
 
 /* <!-- START HOME   --> */
-
 #index svg:nth-child(1){
 	position: absolute;
 	top: 0;
@@ -420,6 +420,9 @@ nav ul li a:hover{
 .brand_content{
 	height: 80px;
 	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 20px;
 	background: #d0d5e548;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -433,7 +436,9 @@ nav ul li a:hover{
 	width: 80px;
 	margin: auto;
 }
-
+.whole-brands{
+	margin-top: 100px ;
+}
 /* end brand part */
 
 /* **************** CLOSE HOME  *************** 
