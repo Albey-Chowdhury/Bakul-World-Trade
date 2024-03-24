@@ -8,30 +8,39 @@ function closesidebar(){
 }
 
 
-// couter timing part start
+document.addEventListener("DOMContentLoaded", function() {
+  // couter timing part start
 
-const counters = [
-    { id: 'counter1', countValue: 0, targetValue: 705, animationSpeed: 5 },
-    { id: 'counter2', countValue: 0, targetValue: 928, animationSpeed: 5 },
-    { id: 'counter3', countValue: 0, targetValue: 1005, animationSpeed: 5 }
+  const counters = [
+      { id: 'counter1', countValue: 0, targetValue: 705, animationSpeed: 5 },
+      { id: 'counter2', countValue: 0, targetValue: 928, animationSpeed: 5 },
+      { id: 'counter3', countValue: 0, targetValue: 1005, animationSpeed: 5 }
   ];
   
   counters.forEach(counter => {
-    const counterElement = document.getElementById(counter.id);
-  
-    function countUp() {
-      if (counter.countValue < counter.targetValue) {
-        counter.countValue++;
-        counterElement.textContent = counter.countValue;
-      } else {
-        clearInterval(interval);
+      const counterElement = document.getElementById(counter.id);
+      
+      // Checking if element exists
+      if (!counterElement) {
+          console.error(`Element with ID '${counter.id}' not found.`);
+          return; // Skip iteration if element not found
       }
-    }
-  
-    let interval = setInterval(countUp, counter.animationSpeed);
+
+      function countUp() {
+          if (counter.countValue < counter.targetValue) {
+              counter.countValue++;
+              counterElement.textContent = counter.countValue;
+          } else {
+              clearInterval(interval);
+          }
+      }
+      
+      let interval = setInterval(countUp, counter.animationSpeed);
   });
 
-// couter timing part end
+  // couter timing part end
+});
+
 
 
 
