@@ -307,8 +307,7 @@ nav ul li a:hover{
 	top: -130px;
 } 
 #home-bottom-wave{
-	position: absolute;
-	bottom: 0;
+	width: 100%;
 }
 /* <!-- START RUNIG CAR PART  --> */
 
