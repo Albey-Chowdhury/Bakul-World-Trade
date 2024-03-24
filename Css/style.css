@@ -28,7 +28,7 @@ a{
 :root{
 	--Primary-color:#29BEF5;
 	--Secondary-color:#45e19f;
-	--tertiary-color:#1D3D63;
+	--tertiary-color:#103664;
 	--wave-color:#D0D5E5;
 	--white-color:#fff;
 	--black-color:#000;
@@ -269,7 +269,8 @@ nav ul li a:hover{
 
 }
 #nav-active{
-	background: var(--black-color);
+	border: 2px solid var(--wave-color);
+	background: #2c9bdc;
 		
 }
 .sidebar{
@@ -382,8 +383,8 @@ nav ul li a:hover{
 .buy{
 	font-size: 1vw;
 	font-weight: bold;
-	color:#48AAEF;
-	font-style: italic;
+	color:var(--Primary-color);
+	text-transform: uppercase;
 	animation: buy 3s linear 1 ;
 }
 
@@ -401,9 +402,9 @@ nav ul li a:hover{
 /* <!-- START BUTTON --> */
 
 .home-btn{
-	padding: .5vw 4vw;
+	padding: .5vw 3vw;
 	font-size: 1rem;
-	margin-top: 2vw;
+	margin-top: 1vw;
 	animation: shop-now 3s linear 1 ;
 }
 
@@ -424,14 +425,13 @@ nav ul li a:hover{
 /* <!-- CLOSE BUTTON --> */
 
 /* start brand part */
+
 .brand_header h1{
 	text-align: center;
 	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
-	color: transparent;
-	-webkit-text-stroke: 1px;
-	-webkit-text-stroke-color: var(--Primary-color);
+	color: var(--Primary-color);
 
 }
 .top-all-brands ul{
@@ -460,7 +460,27 @@ nav ul li a:hover{
 
 }
 /* end brand part */
-
+.home-down-arow{
+	position: absolute;
+	font-size: 40px;
+	color: var(--Secondary-color);
+	left: 48%;
+	top: 70%;
+	border: 1px solid var(--Secondary-color);
+	border-radius: 50%;
+	padding: 20px;
+	animation: downarow 1.5s linear infinite alternate;
+}
+@keyframes downarow{
+	0% {
+	  opacity: 0;
+	  transform: translateY(-10%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+}
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */
   
