@@ -454,44 +454,63 @@ nav ul li a:hover{
 ***************---------------------*********** */
   
  /* start about css */
+ .about_header h1{
+	font-size: 60px;
+	margin-top: 10px;
+	color: var(--Primary-color);
+	font-weight: bold;
+ }
+ .image_item{
+	display: flex;
+ }
+ .vision_car_image img{
+	height: 350px;
+	width: 250px;
+	border-radius: 20px;
+ }
+ .vision_list_item{
+	margin-top: 50px;
+ }
+ .vision_list_item ul li{
+	margin-top: 10px;
+	margin-left: 5px;
+ }
+ .about_list_icon{
+	color: var(--Primary-color);
+ }
+ .about_plans_one{
+	color: var(--Primary-color) !important;
+	height: 200px;
+	width: 200px;
+ }
+ .about_plans_one {
+	height: auto;
+	width: 200px;
+ }
+ .about_plans_one h2{
+	text-align: center;
+	font-weight: bold;
+ }
+ .about_plans_one p{
+	margin-left: 10px;
+ }
+ .about_plans_two{
+	color: var(--Secondary-color) !important;
+	height: auto;
+	width: 200px;
+ }
+ .about_plans_two h2{
+	text-align: center;
+	font-weight: bold;
+ }
+ .about_plans_two p{
+	margin-left: 10px;
+ }
  .whole-counter{
 	background: url(/Image/counterBg.jpg);
 	padding: 50px;
 	border-radius: 50px;
  }
-.about-imge-box{
-	height: 600px;
-}
-.about-imge{
-	width: 100%;
-	height: 100%;
-}
-
-.about-text-box{
-	height: 300px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	border-right: 3px solid gray;
-	border-bottom: 2px solid gray;
-	border-radius: 0px 20px 120px 20px;
-}
-
-.about-text-box p{
-	font-size: 1.3rem;
-	font-weight: 300;
-	color: gray;
-}
-
-.choose-imge{
-	width: 100%;
-	height: 100%;
-}
- .about_header{
-    color: #454545;
-    font-weight: bold;
- }
-
  .counter-box{
     width: 16rem;
     height: 15rem;
@@ -1099,3 +1118,5 @@ img.payment_pic {
 /* ****************  FOOTER  *************** 
 ***************---------------------*********** */
 
+
+  
