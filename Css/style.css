@@ -459,9 +459,9 @@ nav ul li a:hover{
 	color: var(--Primary-color);
 	font-weight: bold;
  }
- .image_item{
+.vision_car_image{
 	display: flex;
- }
+}
  .vision_car_image img{
 	height: 350px;
 	width: 250px;
@@ -477,6 +477,10 @@ nav ul li a:hover{
  .about_list_icon{
 	color: var(--Primary-color);
  }
+ .plan_section_one{
+	display: flex;
+	justify-content: space-around;
+ }
  .about_plans_one{
 	color: var(--Primary-color) !important;
 	height: 200px;
@@ -484,7 +488,10 @@ nav ul li a:hover{
  }
  .about_plans_one {
 	height: auto;
-	width: 200px;
+	width: 350px;
+ }
+ .about_plans_one img{
+	height: 300px;
  }
  .about_plans_one h2{
 	text-align: center;
@@ -496,7 +503,10 @@ nav ul li a:hover{
  .about_plans_two{
 	color: var(--Secondary-color) !important;
 	height: auto;
-	width: 200px;
+	width: 350px;
+ }
+ .about_plans_two img{
+	height: 300px;
  }
  .about_plans_two h2{
 	text-align: center;
@@ -505,6 +515,11 @@ nav ul li a:hover{
  .about_plans_two p{
 	margin-left: 10px;
  }
+
+
+
+
+ 
  .whole-counter{
 	background: url(/Image/counterBg.jpg);
 	padding: 50px;
