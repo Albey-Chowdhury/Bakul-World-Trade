@@ -260,7 +260,8 @@ nav ul li a:hover{
 
 }
 #nav-active{
-		background: var(--black-color);
+	background: var(--black-color);
+		
 }
 .sidebar{
 	position: fixed;
@@ -299,12 +300,16 @@ nav ul li a:hover{
 /* <!-- START HOME   --> */
 #index{
 	height: 100vh;
+	position: relative;
 }
 #index svg:nth-child(1){
 	position: absolute;
-	top: 0;
+	top: -130px;
 } 
-
+#home-bottom-wave{
+	position: absolute;
+	bottom: 0;
+}
 /* <!-- START RUNIG CAR PART  --> */
 
 .runigCar{
@@ -387,8 +392,8 @@ nav ul li a:hover{
 /* <!-- START BUTTON --> */
 
 .home-btn{
-	border: none;
-	border-radius: 50px;
+	padding: .5vw 4vw;
+	font-size: 1rem;
 	margin-top: 2vw;
 	animation: shop-now 3s linear 1 ;
 }
@@ -420,25 +425,24 @@ nav ul li a:hover{
 	-webkit-text-stroke-color: var(--Primary-color);
 
 }
-.top-all-brands{
+.top-all-brands ul{
     width: 100%;
     height: 100px;
+	gap: 20px;
     background-color: #d0d5e577;
-	backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
-	padding-top: 20px;
 	overflow-x: auto ;
 	overflow-y: hidden;
 }
 
 .brands-img{
     height: 60px;
-    max-width:80px;
-    transition: .2s all;
+    max-width:100px;
+    transition: .2s;
 }
 .brands-img:hover{
     transform: scale(1.5);
