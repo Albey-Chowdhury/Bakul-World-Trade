@@ -461,7 +461,7 @@ nav ul li a:hover{
 }
 /* end brand part */
 .home-down-arow{
-	position: absolute;
+	position: sticky;
 	font-size: 40px;
 	color: var(--Secondary-color);
 	left: 48%;
