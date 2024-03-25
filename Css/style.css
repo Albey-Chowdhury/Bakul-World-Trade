@@ -486,19 +486,19 @@ nav ul li a:hover{
   
  /* start about css */
  .about_header h1{
-	font-size: 60px;
-	margin-top: 10px;
-	color: var(--Primary-color);
-	font-weight: bold;
+	 font-size: 60px;
+	 margin-top: 10px;
+	 color: var(--Primary-color);
+	 font-weight: bold;
  }
 .vision_car_image{
 	display: flex;
 }
  .vision_car_image img{
-	height: 350px;
-	width: 250px;
-	border-radius: 20px;
- }
+	 height: 350px;
+	 width: 250px;
+	 border-radius: 20px;
+	}
  .vision_list_item{
 	margin-top: 50px;
  }
@@ -512,29 +512,29 @@ nav ul li a:hover{
  .plan_section_one{
 	display: flex;
 	justify-content: space-around;
- }
- .about_plans_one{
+}
+.about_plans_one{
 	color: var(--Primary-color) !important;
 	height: 200px;
 	width: 200px;
  }
  .about_plans_one {
-	height: auto;
+	 height: auto;
 	width: 350px;
- }
- .about_plans_one img{
+}
+.about_plans_one img{
 	height: 300px;
- }
+}
  .about_plans_one h2{
 	text-align: center;
 	font-weight: bold;
  }
  .about_plans_one p{
-	margin-left: 10px;
+	 margin-left: 10px;
  }
  .about_plans_two{
-	color: var(--Secondary-color) !important;
-	height: auto;
+	 color: var(--Secondary-color) !important;
+	 height: auto;
 	width: 350px;
  }
  .about_plans_two img{
@@ -543,12 +543,62 @@ nav ul li a:hover{
  .about_plans_two h2{
 	text-align: center;
 	font-weight: bold;
- }
+}
  .about_plans_two p{
 	margin-left: 10px;
  }
 
-
+@media (max-width: 576px) {
+	.vision_car_image {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	
+	.vision_car_image img {
+	  width: 100%; 
+	  height: auto;
+	  border-radius: 10px;
+	}
+	
+	.vision_list_item {
+	  margin-top: 20px;
+	}
+	
+	.vision_list_item ul li {
+	  margin-left: 0; 
+	  text-align: center; 
+	}
+	
+	.plan_section_one,
+	.about_plans_one,
+	.about_plans_two {
+	  width: 100%; 
+	  text-align: center; 
+	}
+	
+	.about_plans_one img,
+	.about_plans_two img {
+	  width: 80%; 
+	  height: auto;
+	  margin: 0 auto; 
+	}
+  }
+  @media (max-width: 991px){
+	.vision_car_image {
+		flex-direction: column;
+		align-items: center;
+	  }
+	.plan_section_one{
+		margin-bottom: 20px;
+	}
+	.mission_content{
+		margin-top: 20px;
+	}
+  }
+  
+ 
+ /* end about css */
+ 
 
 
  
