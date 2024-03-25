@@ -461,11 +461,11 @@ nav ul li a:hover{
 }
 /* end brand part */
 .home-down-arow{
-	position: sticky;
+	position: absolute;
 	font-size: 40px;
 	color: var(--Secondary-color);
 	left: 48%;
-	top: 80%;
+	top: 70%;
 	border: 1px solid var(--Secondary-color);
 	border-radius: 50%;
 	padding: 20px;
