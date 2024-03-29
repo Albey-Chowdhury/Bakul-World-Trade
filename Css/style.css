@@ -612,6 +612,38 @@ nav ul li a:hover{
 }
 /* chooseUs part end */
 
+/* special car css start */
+.special_car_header{
+	font-size: 50px;
+	border-bottom: 2px dotted var(--Primary-color);
+	display: inline;
+}
+.special_car_image img{
+	width: 500px;
+	height: 22rem;
+}
+.special_car_two{
+	margin-left: 40px;
+}
+.special_icon{
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+.special_car_one,.special_car_two{
+	padding: 50px;
+}
+.special_car_one p{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--Primary-color);
+}
+.special_car_two p{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--Primary-color);
+}
+/* special car css end */
+
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */
   
