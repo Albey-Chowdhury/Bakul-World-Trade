@@ -505,7 +505,7 @@ nav ul li a:hover{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: auto;
+	height: 40rem;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -527,25 +527,24 @@ nav ul li a:hover{
 	font-size: 18px;
 	font-weight: bold;
 }
-.car_body{
-	display: flex;
-	justify-content: space-around;
-	height: auto;
-	width: auto;
-	
-}
-.car_body img {
+.car_body_one img {
     width: 14rem;
     height: 7rem;
     display: flex;
-    align-items: center;
+	justify-content: center;
 }
+
+.main_car_card{
+	width: 15rem;
+	justify-content: center;
+	border-radius: 0px !important;
+}
+
 /* car body part end */
 
 
 /* feature car start */
 .feature_car_image img {
-    max-width: 100%;
     height: auto;
     margin-top: 8rem;
 }
