@@ -502,6 +502,7 @@ nav ul li a:hover{
 	background-position: center;
 	background-size: cover;
 	height: 30rem;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -516,9 +517,11 @@ nav ul li a:hover{
 }
 .car_body_header p{
 	color: var(--white-color);
-	margin-top: 10px;
-	
-	
+	margin-top: 10px;	
+}
+.car_body_one p{
+	font-size: 18px;
+	font-weight: bold;
 }
 .car_body{
 	display: flex;
@@ -528,7 +531,7 @@ nav ul li a:hover{
 }
 .car_body img {
     width: 14rem;
-    height: 8rem;
+    height: 7rem;
     display: flex;
     align-items: center;
 }
