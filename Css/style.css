@@ -425,7 +425,9 @@ nav ul li a:hover{
 /* <!-- CLOSE BUTTON --> */
 
 /* start brand part */
-
+.whole-brands{
+	position: relative;
+}
 .brand_header h1{
 	text-align: center;
 	font-weight: bold;
@@ -464,8 +466,8 @@ nav ul li a:hover{
 	position: absolute;
 	font-size: 40px;
 	color: var(--Secondary-color);
-	left: 48%;
-	top: 70%;
+	left: 45%;
+	bottom:-100px;
 	border: 1px solid var(--Secondary-color);
 	border-radius: 50%;
 	padding: 20px;
