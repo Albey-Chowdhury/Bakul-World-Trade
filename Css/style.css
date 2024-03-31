@@ -501,7 +501,9 @@ nav ul li a:hover{
 	background: url(/Image/car_body_bg.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 30rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -526,7 +528,8 @@ nav ul li a:hover{
 .car_body{
 	display: flex;
 	justify-content: space-around;
-	height: 10rem;
+	height: auto;
+	width: auto;
 	
 }
 .car_body img {
