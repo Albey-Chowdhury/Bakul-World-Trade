@@ -707,6 +707,63 @@ nav ul li a:hover{
 }
 /* special car css end */
 
+/* home contact css part start */
+.home_contact_bg{
+	background: url(/Image/home_contact.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	width: 100%;
+
+}	
+
+.home_contact_header{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home_contact_header h1 {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    font-size: 6rem;
+    font-weight: bold;
+    margin-top: rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.input_field_header{
+	text-align: center;
+}
+.input_field_content{
+	display: flex;
+	justify-content: center;
+}
+.home_contact_input{
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 5px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	
+}
+.bg_input{
+	background-color:#67def19e;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+.home_contact_btn{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	font-size: 1rem;
+	margin-left: 20px;
+	
+}
+/* home contact css part end */
+
 /* **************** CLOSE HOME  *************** 
 ***************---------------------*********** */
   
