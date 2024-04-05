@@ -65,6 +65,9 @@
     bottom: -50px;
     padding: 10px;
 }
+.car_body_one p{
+    font-size: 10px;
+}
 }
 
 @media(max-width:400px){
@@ -108,4 +111,5 @@
     .brand_header h1{
     font-size: .8rem;
     }
+    
 }
