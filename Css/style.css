@@ -75,7 +75,7 @@ a{
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
-	padding: .8vw 3vw;
+	padding: .5vw 3vw;
     background-color: var(--Secondary-color);
     border-radius: 50px;
     position: relative;
@@ -578,12 +578,15 @@ nav ul li a:hover{
 /* feature car start */
 .feature_car_image img {
     height: auto;
-    margin-top: 8rem;
 }
 
 .feature_box {
-    width: 100%;
-    margin-top: 20px;
+	width:80%;
+	padding: 50px;
+	background:none !important;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border: none !important;
+	margin: 50px;
 }
 
 .left_feature_head h4, .right_feature_head h4 {
@@ -602,7 +605,6 @@ nav ul li a:hover{
 .feature_car_header {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .feature_content {
@@ -612,6 +614,7 @@ nav ul li a:hover{
 
 .feature_content h2 {
     color: var(--Primary-color);
+	font-weight: bold;
 }
 
 .feature_content p {
@@ -627,7 +630,7 @@ nav ul li a:hover{
 }
 
 .main_feature_price {
-    color: red;
+    color: var(--Secondary-color);
 }
 
 .offer_feature_price {
@@ -637,20 +640,31 @@ nav ul li a:hover{
 }
 
 .feature_car_offer {
-    position: relative;
+	float: right;
 }
 
 .feature_car_offer h3 {
-    position: absolute;
-    right: 1rem;
-	bottom: 16rem;
-    border: 3px dotted white;
-    border-radius: 50%;
-    padding: 20px;
-    background: red;
-    color: white;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 3px solid var(--white-color);
+	border-left-color: var(--Secondary-color);
+	border-right-color:var(--Secondary-color);
+    background: var(--Primary-color);
+    color: var(--white-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
-
+.feature_car_offer h3::before{
+	content: '';
+	position: absolute;
+	padding: 50px;
+	border-radius: 50%;
+	border: 2px dotted	 var(--white-color);
+	animation: Woner-box-rotated 60s linear infinite forwards;
+}
 .feature_car_types {
     display: flex;
     margin-top: 30px;
@@ -660,13 +674,23 @@ nav ul li a:hover{
     margin-left: 20px;
 }
 
-.types_color {
-    color: red;
+.types_value {
+    color: var(--wave-color);
+	font-weight: normal;
 }
-
+.feature-i{
+	font-size: 20px;
+	color: var(--Primary-color);
+}
+.feature-types{
+	color: var(--wave-color);
+	font-weight: bold;
+	margin-left: 20px;
+}
+.feature-types hr{
+	color: var(--Primary-color);
+}
 .feature-btn {
-    margin-bottom: 10px;
-    margin-left: 5px;
     text-transform: uppercase;
 }
 

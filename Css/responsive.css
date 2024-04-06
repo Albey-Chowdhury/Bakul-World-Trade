@@ -68,6 +68,16 @@
 .car_body_one p{
     font-size: 10px;
 }
+.feature_car_offer h3 {
+	height: 100px;
+	width: 100px;
+    margin: 20px 20px 0 0;
+}
+.feature-btn{
+    font-weight: normal;
+    font-size: small;
+    padding:10px 50px;
+}
 }
 
 @media(max-width:400px){
