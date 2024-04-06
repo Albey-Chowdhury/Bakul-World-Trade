@@ -581,12 +581,11 @@ nav ul li a:hover{
 }
 
 .feature_box {
-	width:80%;
-	padding: 50px;
+	padding: 20px;
 	background:none !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border: none !important;
-	margin: 50px;
+	margin: 10px;
 }
 
 .left_feature_head h4, .right_feature_head h4 {
@@ -697,20 +696,27 @@ nav ul li a:hover{
 /* feature car end */
 
 /* chooseUs part start */
-.extra_fiture_header h3{
-	color: var(--Primary-color);
+.whol-home-why-choose-us{
+	background-color: #000;
+	padding: 20px;
+}
+.whole-card-feature{
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid var(--white-color);
 }
 .extra_fiture_header h1{
-	background: #0072b1;
+	text-transform: uppercase;
 	display: inline;
-	color: white;
+	color: var(--wave-color);
 }
 .extra_feature_icon{
 	display: flex;
 	justify-content: center;
 }
+
 .e_feature{
-	height: 3rem;
+	font-size: 40px;
 	color: var(--Primary-color);
 }
 .extra_sub_header{
@@ -718,9 +724,15 @@ nav ul li a:hover{
 	font-size: 20px;
 	margin-top: 10px;
 }
+.extra_sub_header h4{
+	text-transform: uppercase;
+	color: var(--Secondary-color);
+	opacity: .9;
+
+}
 .extra_sub_header p{
-	margin-top: 20px;
 	color: gray;
+	font-size: 15px;
 }
 /* chooseUs part end */
 
