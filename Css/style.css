@@ -1369,6 +1369,74 @@ nav ul li a:hover{
 
 /* testimonial part end */
 
+/* shop internal page start */
+.first_header span{
+	margin-left: 12px;
+	font-weight: bold;
+	color: cadetblue;
+}
+.first_header span a{
+	color: cadetblue;
+	text-decoration: none;
+}
+.main_shop_car_header{
+	display: flex;
+	justify-content: space-between;
+}
+.left_shop_header{
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 20px;
+}
+.right_shop_header i{
+	margin-right: 20px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #103664;
+}
+.sub_header_shop{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.left_sub_header i{
+	font-size: 20px;
+	margin-left: 20px;
+}
+.left_sub_header span{
+	margin-left:10px;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--Primary-color);
+}
+.sub_header_price{
+	font-weight: bold;
+	color: red;
+}
+.image_part_one img{
+	width: 100%;
+	height: 30.5rem;
+	border-radius: 10px;
+}
+.image_part_two img{
+	width: 100%;
+	height: 15rem;
+	border-radius: 10px;
+}
+.car_information_header{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.info_car ul li{
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.info_car ul li span{
+	margin-left: 50px;
+}
+/* shop internal page end */
+
 /* start contact part  */
 
 .contact_header{
