@@ -1431,9 +1431,82 @@ nav ul li a:hover{
 .info_car ul li{
 	margin-bottom: 15px;
 	font-size: 20px;
+	font-weight: bold;
 }
 .info_car ul li span{
-	margin-left: 50px;
+	font-weight: 400;
+}
+
+.info_car{
+	display: flex;
+	justify-content: center;
+}
+.info_1{
+	margin-left: 103px;
+}
+.info_2{
+	margin-left: 61px;
+}
+.info_3{
+	margin-left: 77px;
+}
+.info_4{
+	margin-left: 150px;
+}
+.info_5{
+	margin-left: 115px;
+}
+.info_6{
+	margin-left: 72px;
+}
+.info_7{
+	margin-left: 89px;
+}
+.info_8{
+	margin-left: 96px;
+}
+.info_9{
+	margin-left: 100px;
+}
+.info_10{
+	margin-left: 106px;
+}
+.info_11{
+	margin-left: 139px;
+}
+.info_12{
+	margin-left: 143px;
+}
+.info_13{
+	margin-left: 147px;
+}
+.info_14{
+	margin-left: 108px;
+}
+.info_15{
+	margin-left: 64px;
+}
+.info_car ul li i{
+	margin-right: 20px;
+	color: var(--Primary-color);
+}
+
+.shop_feature_header h2{
+	margin-left: 20px;
+}
+.shop_fiture_sub_header{
+	display: flex;
+	justify-content: center;
+}
+.feature_list{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+.feature_list ul li{
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 500;
 }
 /* shop internal page end */
 
