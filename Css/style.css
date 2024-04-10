@@ -1215,10 +1215,6 @@ nav ul li a:hover{
 	display: flex;
 	justify-content: center !important;
 }
-.main_card:hover{
-	transform: scale(1.1);
-	transition: 1.8s;
-}
 .whole-card{
 	background: #203c52;
 }
@@ -1424,7 +1420,7 @@ nav ul li a:hover{
 	height: 15rem;
 	border-radius: 10px;
 }
-.car_information_header{
+.car_information_header h1{
 	margin-top: 20px;
 	margin-left: 20px;
 }
@@ -1491,7 +1487,7 @@ nav ul li a:hover{
 	color: var(--Primary-color);
 }
 
-.shop_feature_header h2{
+.shop_feature_header h1{
 	margin-left: 20px;
 }
 .shop_fiture_sub_header{
@@ -1514,6 +1510,20 @@ nav ul li a:hover{
 	border-radius: 50%;
 	font-size: 22px;
 	color: var(--Secondary-color);
+}
+.description_header h1{
+	margin-left: 20px;
+}
+.main_description{
+	border: 4px dotted var(--white-color);
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-color: var(--Primary-color);
+	color: var(--white-color);
+	padding: 20px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
 }
 /* shop internal page end */
 
