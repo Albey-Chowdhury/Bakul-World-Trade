@@ -1255,56 +1255,52 @@ nav ul li a:hover{
 /* testimonial part start */
 
 .testimonial_bg {
-    background: url(/Image/testimonial_image.jpg);
+    background: var(--white-color);
     background-size: cover;
-    min-height: 100vh; /* Adjusted to cover the full viewport height */
+    min-height: auto;
     background-repeat: no-repeat;
-    padding: 50px 0; /* Added padding for spacing */
+    padding: 50px 0; 
 }
 
 .client_detail {
     background-color: #2e4456;
-    padding: 20px; /* Added padding for spacing */
+    padding: 20px; 
 }
 
 .client_box {
     display: flex;
-    flex-direction: column; /* Changed flex direction to column */
+    flex-direction: column; 
     align-items: center;
-    text-align: center; /* Center align text */
-    margin-bottom: 20px; /* Added margin for spacing between client boxes */
+    text-align: center; 
 	justify-content: space-between;
 }
 
 .client_detail img {
-    width: 100px; /* Adjusted image width */
+    width: 100px; 
     border-radius: 50%;
     border: 3px solid var(--Secondary-color);
 }
 
 .client_info h3 {
-    font-size: 24px; /* Adjusted font size */
+    font-size: 24px; 
     font-weight: bold;
     color: var(--Secondary-color);
-    margin-top: 10px; /* Added margin for spacing */
+    margin-top: 10px; 
 }
 
 .client_info h4 {
-    font-size: 18px; /* Adjusted font size */
+    font-size: 18px; 
     font-weight: bold;
     color: var(--Primary-color);
 }
 
 .client_info h6 {
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px; 
     color: gray;
 }
 
 .client_says p {
-    font-family: 'Oleo Script', cursive;
-    color: rgb(105, 105, 105);
-    margin: 20px 0; 
-	background: powderblue;
+    color:var(--white-color);
 }
 .client_icon {
 	display: flex !important;
