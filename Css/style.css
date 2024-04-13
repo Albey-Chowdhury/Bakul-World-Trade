@@ -791,7 +791,7 @@ nav ul li a:hover{
 	background-repeat: no-repeat;
 	height: auto;
 	width: 100%;
-
+	border-bottom: 5px solid var(--Primary-color);
 }	
 
 .home_contact_header{
@@ -817,11 +817,14 @@ nav ul li a:hover{
 	text-align: center;
 }
 .input_field_header h1{
+	text-transform: uppercase;
 	font-weight: bold;
-	color: var(--black-color);
+	color: var(--white-color);
+	-webkit-text-stroke:2px var(--wave-color);
 }
 .input_field_header p{
-	color: var(--black-color);
+	font-size: 10px;
+	color: var(--wave-color);
 }
 .input_field_content{
 	display: flex;
@@ -840,12 +843,11 @@ nav ul li a:hover{
 	
 }
 .home_contact_input::placeholder{
-	color: var(--black-color);
+	color: var(--white-color);
 }
 .bg_input{
-	background-color:#ffffffb8;
+	background-color:#2E4456;
 	padding: 20px;	
-	border-top-left-radius: 100px;
 	border-bottom-right-radius: 100px;
 }
 .home_contact_btn{
@@ -1733,8 +1735,8 @@ img.payment_pic {
   
   /* for all social containers*/
   .socialContainer {
-	width: 35px;
-	height: 35px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	background-color: rgb(44, 44, 44);
 	display: flex;
