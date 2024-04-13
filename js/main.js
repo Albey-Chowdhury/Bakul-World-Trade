@@ -45,3 +45,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // couter timing part start
+  
+    const counters = [
+        { id: 'view1', countValue: 0, targetValue: 100, animationSpeed: 50 },
+        { id: 'view2', countValue: 0, targetValue: 200, animationSpeed: 50 }
+
+    ];
+    
+    counters.forEach(counter => {
+        const counterElement = document.getElementById(counter.id);
+        
+        // Checking if element exists
+        if (!counterElement) {
+            console.error(`Element with ID '${counter.id}' not found.`);
+            return; // Skip iteration if element not found
+        }
+  
+        function countUp() {
+            if (counter.countValue < counter.targetValue) {
+                counter.countValue++;
+                counterElement.textContent = counter.countValue;
+            } else {
+                clearInterval(interval);
+            }
+        }
+        
+        let interval = setInterval(countUp, counter.animationSpeed);
+    });
+  
+    // couter timing part end
+  });
+
+
+
+

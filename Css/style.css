@@ -1215,10 +1215,6 @@ nav ul li a:hover{
 	display: flex;
 	justify-content: center !important;
 }
-.main_card:hover{
-	transform: scale(1.1);
-	transition: 1.8s;
-}
 .whole-card{
 	background: #203c52;
 }
@@ -1364,6 +1360,168 @@ nav ul li a:hover{
 
 
 /* testimonial part end */
+
+/* shop internal page start */
+.first_header span{
+	margin-left: 12px;
+	font-weight: bold;
+	color: cadetblue;
+}
+.first_header span a{
+	color: cadetblue;
+	text-decoration: none;
+}
+.main_shop_car_header{
+	display: flex;
+	justify-content: space-between;
+}
+.left_shop_header{
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 20px;
+}
+.right_shop_header i{
+	margin-right: 20px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #103664;
+}
+.sub_header_shop{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.left_sub_header i{
+	font-size: 20px;
+	margin-left: 20px;
+}
+.left_sub_header span{
+	margin-left:10px;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--Primary-color);
+}
+.sub_header_price{
+	font-weight: bold;
+	color: red;
+}
+.image_part_one img{
+	width: 100%;
+	height: 30.5rem;
+	border-radius: 10px;
+}
+.image_part_two img{
+	width: 100%;
+	height: 15rem;
+	border-radius: 10px;
+}
+.car_information_header h1{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.info_car ul li{
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.info_car ul li span{
+	font-weight: 400;
+}
+
+.info_car{
+	display: flex;
+	justify-content: center;
+}
+.info_1{
+	margin-left: 103px;
+}
+.info_2{
+	margin-left: 61px;
+}
+.info_3{
+	margin-left: 77px;
+}
+.info_4{
+	margin-left: 150px;
+}
+.info_5{
+	margin-left: 115px;
+}
+.info_6{
+	margin-left: 72px;
+}
+.info_7{
+	margin-left: 89px;
+}
+.info_8{
+	margin-left: 96px;
+}
+.info_9{
+	margin-left: 100px;
+}
+.info_10{
+	margin-left: 106px;
+}
+.info_11{
+	margin-left: 139px;
+}
+.info_12{
+	margin-left: 143px;
+}
+.info_13{
+	margin-left: 147px;
+}
+.info_14{
+	margin-left: 108px;
+}
+.info_15{
+	margin-left: 64px;
+}
+.info_car ul li i{
+	margin-right: 20px;
+	color: var(--Primary-color);
+}
+
+.shop_feature_header h1{
+	margin-left: 20px;
+}
+.shop_fiture_sub_header{
+	display: flex;
+	justify-content: center;
+}
+.feature_list{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+.feature_list ul li{
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.shop_list_icon{
+	margin-right: 10px;
+	background: var(--Primary-color);
+	border-radius: 50%;
+	font-size: 22px;
+	color: var(--Secondary-color);
+}
+.description_header h1{
+	margin-left: 20px;
+}
+.main_description{
+	border: 4px dotted var(--white-color);
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-color: var(--Primary-color);
+	color: var(--white-color);
+	padding: 20px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+/* shop internal page end */
 
 /* start contact part  */
 
